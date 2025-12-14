@@ -4722,6 +4722,17 @@
           "type": "literal",
           "children": {
 
+            "runFunction": {
+              "type": "literal",
+              "children" :{
+                
+                "function": {
+                  "type": "argument",
+                  "parser": "type:message"
+                }
+              }
+            },
+
             "dump": {
               "type": "literal",
               "children": {
