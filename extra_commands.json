@@ -5976,7 +5976,7 @@
 
                     "value": {
                       "type":"argument",
-                      "parser":"minecraft:nbt_path",
+                      "parser":"type:message",
                       "executable": true
                     }
                   },
