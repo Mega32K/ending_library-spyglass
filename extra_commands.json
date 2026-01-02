@@ -5967,12 +5967,7 @@
 
                 "render_scale": {
                   "type": "literal",
-                  "children": {
-
-                    "default": {
-                      "type": "literal",
-                      "executable":true
-                    },
+                  "children": { 
 
                     "value": {
                       "type":"argument",
