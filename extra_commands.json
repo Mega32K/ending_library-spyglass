@@ -6,6 +6,29 @@
       "type":"literal",
       "children": {
 
+        "heal": {
+          "type": "literal",
+          "children": {
+
+            "targets": {
+              "type": "argument",
+              "parser": "minecraft:entity",
+              "properties": {
+                "amount": "multiple",
+                "type":"entities"
+              },
+              "children": {
+
+                "value": {
+                  "type":"argument",
+                  "parser":"brigadier:float",
+                  "executable": true
+                }
+              }
+            }
+          }
+        },
+
         "target": {
           "type":"literal",
           "children": {
