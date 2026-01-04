@@ -2509,2196 +2509,2207 @@
           "type": "literal",
           "children": {
 
-            "cooldown": {
-              "type": "literal",
+            "targets": {
+              "type": "argument",
+              "parser": "minecraft:entity",
+              "properties": {
+                "type": "player",
+                "amount":"single"
+              },
               "children": {
 
-                "undefined": {
+                "cooldown": {
                   "type": "literal",
                   "children": {
 
-                    "clear": {
+                    "undefined": {
                       "type": "literal",
-                      "executable": true
-                    },
-
-                    "increase": {
-                      "type":"literal",
                       "children": {
-
-                        "ticks": {
-                          "type":"argument",
-                          "parser": "brigadier:integer",
-                          "properties": {
-                            "min": 0
-                          },
-                          "executable":true
-                        }
-                      }
-                    },
 
-                    "decrease": {
-                      "type":"literal",
-                      "children": {
+                        "clear": {
+                          "type": "literal",
+                          "executable": true
+                        },
 
-                        "ticks": {
-                          "type":"argument",
-                          "parser": "brigadier:integer",
-                          "properties": {
-                            "min": 0
-                          },
-                          "executable":true
-                        }
-                      }
-                    }
-                  },
-                  "executable":true
-                },
+                        "increase": {
+                          "type":"literal",
+                          "children": {
 
-                "all": {
-                  "type": "literal",
-                  "children": {
+                            "ticks": {
+                              "type":"argument",
+                              "parser": "brigadier:integer",
+                              "properties": {
+                                "min": 0
+                              },
+                              "executable":true
+                            }
+                          }
+                        },
+
+                        "decrease": {
+                          "type":"literal",
+                          "children": {
 
-                    "clear": {
-                      "type": "literal",
-                      "executable": true
+                            "ticks": {
+                              "type":"argument",
+                              "parser": "brigadier:integer",
+                              "properties": {
+                                "min": 0
+                              },
+                              "executable":true
+                            }
+                          }
+                        }
+                      },
+                      "executable":true
                     },
 
-                    "increase": {
-                      "type":"literal",
+                    "all": {
+                      "type": "literal",
                       "children": {
 
-                        "ticks": {
-                          "type":"argument",
-                          "parser": "brigadier:integer",
-                          "properties": {
-                            "min": 0
-                          },
-                          "executable":true
+                        "clear": {
+                          "type": "literal",
+                          "executable": true
+                        },
+
+                        "increase": {
+                          "type":"literal",
+                          "children": {
+
+                            "ticks": {
+                              "type":"argument",
+                              "parser": "brigadier:integer",
+                              "properties": {
+                                "min": 0
+                              },
+                              "executable":true
+                            }
+                          }
+                        },
+
+                        "decrease": {
+                          "type":"literal",
+                          "children": {
+
+                            "ticks": {
+                              "type":"argument",
+                              "parser": "brigadier:integer",
+                              "properties": {
+                                "min": 0
+                              },
+                              "executable":true
+                            }
+                          }
                         }
-                      }
+                      },
+                      "executable":true
                     },
 
-                    "decrease": {
-                      "type":"literal",
+                    "movement": {
+                      "type": "literal",
                       "children": {
 
-                        "ticks": {
-                          "type":"argument",
-                          "parser": "brigadier:integer",
-                          "properties": {
-                            "min": 0
-                          },
-                          "executable":true
-                        }
-                      }
-                    }
-                  },
-                  "executable":true
-                },
+                        "clear": {
+                          "type": "literal",
+                          "executable": true
+                        },
 
-                "movement": {
-                  "type": "literal",
-                  "children": {
+                        "increase": {
+                          "type":"literal",
+                          "children": {
 
-                    "clear": {
-                      "type": "literal",
-                      "executable": true
-                    },
+                            "ticks": {
+                              "type":"argument",
+                              "parser": "brigadier:integer",
+                              "properties": {
+                                "min": 0
+                              },
+                              "executable":true
+                            }
+                          }
+                        },
+
+                        "decrease": {
+                          "type":"literal",
+                          "children": {
+
+                            "ticks": {
+                              "type":"argument",
+                              "parser": "brigadier:integer",
+                              "properties": {
+                                "min": 0
+                              },
+                              "executable":true
+                            }
+                          }
+                        }
+                      },
+                      "executable":true
+                    },
+
+                    "movement/lateral_move": {
+                      "type": "literal",
+                      "children": {
+
+                        "clear": {
+                          "type": "literal",
+                          "executable": true
+                        },
+
+                        "increase": {
+                          "type":"literal",
+                          "children": {
+
+                            "ticks": {
+                              "type":"argument",
+                              "parser": "brigadier:integer",
+                              "properties": {
+                                "min": 0
+                              },
+                              "executable":true
+                            }
+                          }
+                        },
+
+                        "decrease": {
+                          "type":"literal",
+                          "children": {
+
+                            "ticks": {
+                              "type":"argument",
+                              "parser": "brigadier:integer",
+                              "properties": {
+                                "min": 0
+                              },
+                              "executable":true
+                            }
+                          }
+                        }
+                      },
+                      "executable":true
+                    },
+
+                    "movement/lateral_move/forward": {
+                      "type": "literal",
+                      "children": {
+
+                        "clear": {
+                          "type": "literal",
+                          "executable": true
+                        },
+
+                        "increase": {
+                          "type":"literal",
+                          "children": {
+
+                            "ticks": {
+                              "type":"argument",
+                              "parser": "brigadier:integer",
+                              "properties": {
+                                "min": 0
+                              },
+                              "executable":true
+                            }
+                          }
+                        },
+
+                        "decrease": {
+                          "type":"literal",
+                          "children": {
+
+                            "ticks": {
+                              "type":"argument",
+                              "parser": "brigadier:integer",
+                              "properties": {
+                                "min": 0
+                              },
+                              "executable":true
+                            }
+                          }
+                        }
+                      },
+                      "executable":true
+                    },
+
+                    "movement/lateral_move/backward": {
+                      "type": "literal",
+                      "children": {
+
+                        "clear": {
+                          "type": "literal",
+                          "executable": true
+                        },
+
+                        "increase": {
+                          "type":"literal",
+                          "children": {
+
+                            "ticks": {
+                              "type":"argument",
+                              "parser": "brigadier:integer",
+                              "properties": {
+                                "min": 0
+                              },
+                              "executable":true
+                            }
+                          }
+                        },
+
+                        "decrease": {
+                          "type":"literal",
+                          "children": {
+
+                            "ticks": {
+                              "type":"argument",
+                              "parser": "brigadier:integer",
+                              "properties": {
+                                "min": 0
+                              },
+                              "executable":true
+                            }
+                          }
+                        }
+                      },
+                      "executable":true
+                    },
+
+                    "movement/lateral_move/left": {
+                      "type": "literal",
+                      "children": {
+
+                        "clear": {
+                          "type": "literal",
+                          "executable": true
+                        },
+
+                        "increase": {
+                          "type":"literal",
+                          "children": {
+
+                            "ticks": {
+                              "type":"argument",
+                              "parser": "brigadier:integer",
+                              "properties": {
+                                "min": 0
+                              },
+                              "executable":true
+                            }
+                          }
+                        },
+
+                        "decrease": {
+                          "type":"literal",
+                          "children": {
+
+                            "ticks": {
+                              "type":"argument",
+                              "parser": "brigadier:integer",
+                              "properties": {
+                                "min": 0
+                              },
+                              "executable":true
+                            }
+                          }
+                        }
+                      },
+                      "executable":true
+                    },
+
+                    "movement/lateral_move/right": {
+                      "type": "literal",
+                      "children": {
+
+                        "clear": {
+                          "type": "literal",
+                          "executable": true
+                        },
+
+                        "increase": {
+                          "type":"literal",
+                          "children": {
+
+                            "ticks": {
+                              "type":"argument",
+                              "parser": "brigadier:integer",
+                              "properties": {
+                                "min": 0
+                              },
+                              "executable":true
+                            }
+                          }
+                        },
+
+                        "decrease": {
+                          "type":"literal",
+                          "children": {
+
+                            "ticks": {
+                              "type":"argument",
+                              "parser": "brigadier:integer",
+                              "properties": {
+                                "min": 0
+                              },
+                              "executable":true
+                            }
+                          }
+                        }
+                      },
+                      "executable":true
+                    },
+
+                    "movement/jump": {
+                      "type": "literal",
+                      "children": {
+
+                        "clear": {
+                          "type": "literal",
+                          "executable": true
+                        },
+
+                        "increase": {
+                          "type":"literal",
+                          "children": {
+
+                            "ticks": {
+                              "type":"argument",
+                              "parser": "brigadier:integer",
+                              "properties": {
+                                "min": 0
+                              },
+                              "executable":true
+                            }
+                          }
+                        },
+
+                        "decrease": {
+                          "type":"literal",
+                          "children": {
+
+                            "ticks": {
+                              "type":"argument",
+                              "parser": "brigadier:integer",
+                              "properties": {
+                                "min": 0
+                              },
+                              "executable":true
+                            }
+                          }
+                        }
+                      },
+                      "executable":true
+                    },
+
+                    "movement/sneak": {
+                      "type": "literal",
+                      "children": {
+
+                        "clear": {
+                          "type": "literal",
+                          "executable": true
+                        },
+
+                        "increase": {
+                          "type":"literal",
+                          "children": {
+
+                            "ticks": {
+                              "type":"argument",
+                              "parser": "brigadier:integer",
+                              "properties": {
+                                "min": 0
+                              },
+                              "executable":true
+                            }
+                          }
+                        },
+
+                        "decrease": {
+                          "type":"literal",
+                          "children": {
+
+                            "ticks": {
+                              "type":"argument",
+                              "parser": "brigadier:integer",
+                              "properties": {
+                                "min": 0
+                              },
+                              "executable":true
+                            }
+                          }
+                        }
+                      },
+                      "executable":true
+                    },
+
+                    "rotation": {
+                      "type": "literal",
+                      "children": {
+
+                        "clear": {
+                          "type": "literal",
+                          "executable": true
+                        },
+
+                        "increase": {
+                          "type":"literal",
+                          "children": {
+
+                            "ticks": {
+                              "type":"argument",
+                              "parser": "brigadier:integer",
+                              "properties": {
+                                "min": 0
+                              },
+                              "executable":true
+                            }
+                          }
+                        },
+
+                        "decrease": {
+                          "type":"literal",
+                          "children": {
+
+                            "ticks": {
+                              "type":"argument",
+                              "parser": "brigadier:integer",
+                              "properties": {
+                                "min": 0
+                              },
+                              "executable":true
+                            }
+                          }
+                        }
+                      },
+                      "executable":true
+                    },
+
+                    "rotation/horizontal": {
+                      "type": "literal",
+                      "children": {
+
+                        "clear": {
+                          "type": "literal",
+                          "executable": true
+                        },
+
+                        "increase": {
+                          "type":"literal",
+                          "children": {
+
+                            "ticks": {
+                              "type":"argument",
+                              "parser": "brigadier:integer",
+                              "properties": {
+                                "min": 0
+                              },
+                              "executable":true
+                            }
+                          }
+                        },
+
+                        "decrease": {
+                          "type":"literal",
+                          "children": {
+
+                            "ticks": {
+                              "type":"argument",
+                              "parser": "brigadier:integer",
+                              "properties": {
+                                "min": 0
+                              },
+                              "executable":true
+                            }
+                          }
+                        }
+                      },
+                      "executable":true
+                    },
+
+                    "rotation/vertical": {
+                      "type": "literal",
+                      "children": {
+
+                        "clear": {
+                          "type": "literal",
+                          "executable": true
+                        },
+
+                        "increase": {
+                          "type":"literal",
+                          "children": {
+
+                            "ticks": {
+                              "type":"argument",
+                              "parser": "brigadier:integer",
+                              "properties": {
+                                "min": 0
+                              },
+                              "executable":true
+                            }
+                          }
+                        },
+
+                        "decrease": {
+                          "type":"literal",
+                          "children": {
+
+                            "ticks": {
+                              "type":"argument",
+                              "parser": "brigadier:integer",
+                              "properties": {
+                                "min": 0
+                              },
+                              "executable":true
+                            }
+                          }
+                        }
+                      },
+                      "executable":true
+                    },
+
+                    "mouse": {
+                      "type": "literal",
+                      "children": {
+
+                        "clear": {
+                          "type": "literal",
+                          "executable": true
+                        },
+
+                        "increase": {
+                          "type":"literal",
+                          "children": {
+
+                            "ticks": {
+                              "type":"argument",
+                              "parser": "brigadier:integer",
+                              "properties": {
+                                "min": 0
+                              },
+                              "executable":true
+                            }
+                          }
+                        },
+
+                        "decrease": {
+                          "type":"literal",
+                          "children": {
+
+                            "ticks": {
+                              "type":"argument",
+                              "parser": "brigadier:integer",
+                              "properties": {
+                                "min": 0
+                              },
+                              "executable":true
+                            }
+                          }
+                        }
+                      },
+                      "executable":true
+                    },
+
+                    "mouse/attack": {
+                      "type": "literal",
+                      "children": {
+
+                        "clear": {
+                          "type": "literal",
+                          "executable": true
+                        },
+
+                        "increase": {
+                          "type":"literal",
+                          "children": {
+
+                            "ticks": {
+                              "type":"argument",
+                              "parser": "brigadier:integer",
+                              "properties": {
+                                "min": 0
+                              },
+                              "executable":true
+                            }
+                          }
+                        },
+
+                        "decrease": {
+                          "type":"literal",
+                          "children": {
+
+                            "ticks": {
+                              "type":"argument",
+                              "parser": "brigadier:integer",
+                              "properties": {
+                                "min": 0
+                              },
+                              "executable":true
+                            }
+                          }
+                        }
+                      },
+                      "executable":true
+                    },
+
+                    "mouse/use": {
+                      "type": "literal",
+                      "children": {
+
+                        "clear": {
+                          "type": "literal",
+                          "executable": true
+                        },
+
+                        "increase": {
+                          "type":"literal",
+                          "children": {
+
+                            "ticks": {
+                              "type":"argument",
+                              "parser": "brigadier:integer",
+                              "properties": {
+                                "min": 0
+                              },
+                              "executable":true
+                            }
+                          }
+                        },
+
+                        "decrease": {
+                          "type":"literal",
+                          "children": {
+
+                            "ticks": {
+                              "type":"argument",
+                              "parser": "brigadier:integer",
+                              "properties": {
+                                "min": 0
+                              },
+                              "executable":true
+                            }
+                          }
+                        }
+                      },
+                      "executable":true
+                    },
+
+                    "mouse/pick_item": {
+                      "type": "literal",
+                      "children": {
+
+                        "clear": {
+                          "type": "literal",
+                          "executable": true
+                        },
+
+                        "increase": {
+                          "type":"literal",
+                          "children": {
+
+                            "ticks": {
+                              "type":"argument",
+                              "parser": "brigadier:integer",
+                              "properties": {
+                                "min": 0
+                              },
+                              "executable":true
+                            }
+                          }
+                        },
+
+                        "decrease": {
+                          "type":"literal",
+                          "children": {
+
+                            "ticks": {
+                              "type":"argument",
+                              "parser": "brigadier:integer",
+                              "properties": {
+                                "min": 0
+                              },
+                              "executable":true
+                            }
+                          }
+                        }
+                      },
+                      "executable":true
+                    },
+
+                    "smooth_camera": {
+                      "type": "literal",
+                      "children": {
+
+                        "clear": {
+                          "type": "literal",
+                          "executable": true
+                        },
+
+                        "increase": {
+                          "type":"literal",
+                          "children": {
+
+                            "ticks": {
+                              "type":"argument",
+                              "parser": "brigadier:integer",
+                              "properties": {
+                                "min": 0
+                              },
+                              "executable":true
+                            }
+                          }
+                        },
+
+                        "decrease": {
+                          "type":"literal",
+                          "children": {
+
+                            "ticks": {
+                              "type":"argument",
+                              "parser": "brigadier:integer",
+                              "properties": {
+                                "min": 0
+                              },
+                              "executable":true
+                            }
+                          }
+                        }
+                      },
+                      "executable":true
+                    },
+
+                    "hotbar": {
+                      "type": "literal",
+                      "children": {
+
+                        "clear": {
+                          "type": "literal",
+                          "executable": true
+                        },
+
+                        "increase": {
+                          "type":"literal",
+                          "children": {
+
+                            "ticks": {
+                              "type":"argument",
+                              "parser": "brigadier:integer",
+                              "properties": {
+                                "min": 0
+                              },
+                              "executable":true
+                            }
+                          }
+                        },
+
+                        "decrease": {
+                          "type":"literal",
+                          "children": {
+
+                            "ticks": {
+                              "type":"argument",
+                              "parser": "brigadier:integer",
+                              "properties": {
+                                "min": 0
+                              },
+                              "executable":true
+                            }
+                          }
+                        }
+                      },
+                      "executable":true
+                    },
+
+                    "hotbar/1": {
+                      "type": "literal",
+                      "children": {
+
+                        "clear": {
+                          "type": "literal",
+                          "executable": true
+                        },
+
+                        "increase": {
+                          "type":"literal",
+                          "children": {
+
+                            "ticks": {
+                              "type":"argument",
+                              "parser": "brigadier:integer",
+                              "properties": {
+                                "min": 0
+                              },
+                              "executable":true
+                            }
+                          }
+                        },
+
+                        "decrease": {
+                          "type":"literal",
+                          "children": {
+
+                            "ticks": {
+                              "type":"argument",
+                              "parser": "brigadier:integer",
+                              "properties": {
+                                "min": 0
+                              },
+                              "executable":true
+                            }
+                          }
+                        }
+                      },
+                      "executable":true
+                    },
+
+                    "hotbar/2": {
+                      "type": "literal",
+                      "children": {
+
+                        "clear": {
+                          "type": "literal",
+                          "executable": true
+                        },
+
+                        "increase": {
+                          "type":"literal",
+                          "children": {
+
+                            "ticks": {
+                              "type":"argument",
+                              "parser": "brigadier:integer",
+                              "properties": {
+                                "min": 0
+                              },
+                              "executable":true
+                            }
+                          }
+                        },
+
+                        "decrease": {
+                          "type":"literal",
+                          "children": {
+
+                            "ticks": {
+                              "type":"argument",
+                              "parser": "brigadier:integer",
+                              "properties": {
+                                "min": 0
+                              },
+                              "executable":true
+                            }
+                          }
+                        }
+                      },
+                      "executable":true
+                    },
+
+                    "hotbar/3": {
+                      "type": "literal",
+                      "children": {
+
+                        "clear": {
+                          "type": "literal",
+                          "executable": true
+                        },
+
+                        "increase": {
+                          "type":"literal",
+                          "children": {
+
+                            "ticks": {
+                              "type":"argument",
+                              "parser": "brigadier:integer",
+                              "properties": {
+                                "min": 0
+                              },
+                              "executable":true
+                            }
+                          }
+                        },
+
+                        "decrease": {
+                          "type":"literal",
+                          "children": {
+
+                            "ticks": {
+                              "type":"argument",
+                              "parser": "brigadier:integer",
+                              "properties": {
+                                "min": 0
+                              },
+                              "executable":true
+                            }
+                          }
+                        }
+                      },
+                      "executable":true
+                    },
+
+                    "hotbar/4": {
+                      "type": "literal",
+                      "children": {
+
+                        "clear": {
+                          "type": "literal",
+                          "executable": true
+                        },
+
+                        "increase": {
+                          "type":"literal",
+                          "children": {
+
+                            "ticks": {
+                              "type":"argument",
+                              "parser": "brigadier:integer",
+                              "properties": {
+                                "min": 0
+                              },
+                              "executable":true
+                            }
+                          }
+                        },
+
+                        "decrease": {
+                          "type":"literal",
+                          "children": {
+
+                            "ticks": {
+                              "type":"argument",
+                              "parser": "brigadier:integer",
+                              "properties": {
+                                "min": 0
+                              },
+                              "executable":true
+                            }
+                          }
+                        }
+                      },
+                      "executable":true
+                    },
+
+                    "hotbar/5": {
+                      "type": "literal",
+                      "children": {
+
+                        "clear": {
+                          "type": "literal",
+                          "executable": true
+                        },
+
+                        "increase": {
+                          "type":"literal",
+                          "children": {
+
+                            "ticks": {
+                              "type":"argument",
+                              "parser": "brigadier:integer",
+                              "properties": {
+                                "min": 0
+                              },
+                              "executable":true
+                            }
+                          }
+                        },
+
+                        "decrease": {
+                          "type":"literal",
+                          "children": {
+
+                            "ticks": {
+                              "type":"argument",
+                              "parser": "brigadier:integer",
+                              "properties": {
+                                "min": 0
+                              },
+                              "executable":true
+                            }
+                          }
+                        }
+                      },
+                      "executable":true
+                    },
+
+                    "hotbar/6": {
+                      "type": "literal",
+                      "children": {
+
+                        "clear": {
+                          "type": "literal",
+                          "executable": true
+                        },
+
+                        "increase": {
+                          "type":"literal",
+                          "children": {
+
+                            "ticks": {
+                              "type":"argument",
+                              "parser": "brigadier:integer",
+                              "properties": {
+                                "min": 0
+                              },
+                              "executable":true
+                            }
+                          }
+                        },
+
+                        "decrease": {
+                          "type":"literal",
+                          "children": {
+
+                            "ticks": {
+                              "type":"argument",
+                              "parser": "brigadier:integer",
+                              "properties": {
+                                "min": 0
+                              },
+                              "executable":true
+                            }
+                          }
+                        }
+                      },
+                      "executable":true
+                    },
+
+                    "hotbar/7": {
+                      "type": "literal",
+                      "children": {
+
+                        "clear": {
+                          "type": "literal",
+                          "executable": true
+                        },
+
+                        "increase": {
+                          "type":"literal",
+                          "children": {
+
+                            "ticks": {
+                              "type":"argument",
+                              "parser": "brigadier:integer",
+                              "properties": {
+                                "min": 0
+                              },
+                              "executable":true
+                            }
+                          }
+                        },
+
+                        "decrease": {
+                          "type":"literal",
+                          "children": {
+
+                            "ticks": {
+                              "type":"argument",
+                              "parser": "brigadier:integer",
+                              "properties": {
+                                "min": 0
+                              },
+                              "executable":true
+                            }
+                          }
+                        }
+                      },
+                      "executable":true
+                    },
+
+                    "hotbar/8": {
+                      "type": "literal",
+                      "children": {
+
+                        "clear": {
+                          "type": "literal",
+                          "executable": true
+                        },
+
+                        "increase": {
+                          "type":"literal",
+                          "children": {
+
+                            "ticks": {
+                              "type":"argument",
+                              "parser": "brigadier:integer",
+                              "properties": {
+                                "min": 0
+                              },
+                              "executable":true
+                            }
+                          }
+                        },
+
+                        "decrease": {
+                          "type":"literal",
+                          "children": {
+
+                            "ticks": {
+                              "type":"argument",
+                              "parser": "brigadier:integer",
+                              "properties": {
+                                "min": 0
+                              },
+                              "executable":true
+                            }
+                          }
+                        }
+                      },
+                      "executable":true
+                    },
+
+                    "hotbar/9": {
+                      "type": "literal",
+                      "children": {
+
+                        "clear": {
+                          "type": "literal",
+                          "executable": true
+                        },
+
+                        "increase": {
+                          "type":"literal",
+                          "children": {
+
+                            "ticks": {
+                              "type":"argument",
+                              "parser": "brigadier:integer",
+                              "properties": {
+                                "min": 0
+                              },
+                              "executable":true
+                            }
+                          }
+                        },
+
+                        "decrease": {
+                          "type":"literal",
+                          "children": {
+
+                            "ticks": {
+                              "type":"argument",
+                              "parser": "brigadier:integer",
+                              "properties": {
+                                "min": 0
+                              },
+                              "executable":true
+                            }
+                          }
+                        }
+                      },
+                      "executable":true
+                    },
+
+                    "social_interaction": {
+                      "type": "literal",
+                      "children": {
+
+                        "clear": {
+                          "type": "literal",
+                          "executable": true
+                        },
+
+                        "increase": {
+                          "type":"literal",
+                          "children": {
+
+                            "ticks": {
+                              "type":"argument",
+                              "parser": "brigadier:integer",
+                              "properties": {
+                                "min": 0
+                              },
+                              "executable":true
+                            }
+                          }
+                        },
+
+                        "decrease": {
+                          "type":"literal",
+                          "children": {
+
+                            "ticks": {
+                              "type":"argument",
+                              "parser": "brigadier:integer",
+                              "properties": {
+                                "min": 0
+                              },
+                              "executable":true
+                            }
+                          }
+                        }
+                      },
+                      "executable":true
+                    },
+
+                    "inventory": {
+                      "type": "literal",
+                      "children": {
+
+                        "clear": {
+                          "type": "literal",
+                          "executable": true
+                        },
+
+                        "increase": {
+                          "type":"literal",
+                          "children": {
+
+                            "ticks": {
+                              "type":"argument",
+                              "parser": "brigadier:integer",
+                              "properties": {
+                                "min": 0
+                              },
+                              "executable":true
+                            }
+                          }
+                        },
+
+                        "decrease": {
+                          "type":"literal",
+                          "children": {
+
+                            "ticks": {
+                              "type":"argument",
+                              "parser": "brigadier:integer",
+                              "properties": {
+                                "min": 0
+                              },
+                              "executable":true
+                            }
+                          }
+                        }
+                      },
+                      "executable":true
+                    },
+
+                    "advancement": {
+                      "type": "literal",
+                      "children": {
+
+                        "clear": {
+                          "type": "literal",
+                          "executable": true
+                        },
+
+                        "increase": {
+                          "type":"literal",
+                          "children": {
+
+                            "ticks": {
+                              "type":"argument",
+                              "parser": "brigadier:integer",
+                              "properties": {
+                                "min": 0
+                              },
+                              "executable":true
+                            }
+                          }
+                        },
+
+                        "decrease": {
+                          "type":"literal",
+                          "children": {
+
+                            "ticks": {
+                              "type":"argument",
+                              "parser": "brigadier:integer",
+                              "properties": {
+                                "min": 0
+                              },
+                              "executable":true
+                            }
+                          }
+                        }
+                      },
+                      "executable":true
+                    },
+
+                    "swap_hand": {
+                      "type": "literal",
+                      "children": {
+
+                        "clear": {
+                          "type": "literal",
+                          "executable": true
+                        },
+
+                        "increase": {
+                          "type":"literal",
+                          "children": {
+
+                            "ticks": {
+                              "type":"argument",
+                              "parser": "brigadier:integer",
+                              "properties": {
+                                "min": 0
+                              },
+                              "executable":true
+                            }
+                          }
+                        },
+
+                        "decrease": {
+                          "type":"literal",
+                          "children": {
+
+                            "ticks": {
+                              "type":"argument",
+                              "parser": "brigadier:integer",
+                              "properties": {
+                                "min": 0
+                              },
+                              "executable":true
+                            }
+                          }
+                        }
+                      },
+                      "executable":true
+                    },
+
+                    "drop_item": {
+                      "type": "literal",
+                      "children": {
+
+                        "clear": {
+                          "type": "literal",
+                          "executable": true
+                        },
+
+                        "increase": {
+                          "type":"literal",
+                          "children": {
+
+                            "ticks": {
+                              "type":"argument",
+                              "parser": "brigadier:integer",
+                              "properties": {
+                                "min": 0
+                              },
+                              "executable":true
+                            }
+                          }
+                        },
 
-                    "increase": {
-                      "type":"literal",
-                      "children": {
+                        "decrease": {
+                          "type":"literal",
+                          "children": {
 
-                        "ticks": {
-                          "type":"argument",
-                          "parser": "brigadier:integer",
-                          "properties": {
-                            "min": 0
-                          },
-                          "executable":true
+                            "ticks": {
+                              "type":"argument",
+                              "parser": "brigadier:integer",
+                              "properties": {
+                                "min": 0
+                              },
+                              "executable":true
+                            }
+                          }
                         }
-                      }
+                      },
+                      "executable":true
                     },
 
-                    "decrease": {
-                      "type":"literal",
+                    "chat": {
+                      "type": "literal",
                       "children": {
+
+                        "clear": {
+                          "type": "literal",
+                          "executable": true
+                        },
+
+                        "increase": {
+                          "type":"literal",
+                          "children": {
+
+                            "ticks": {
+                              "type":"argument",
+                              "parser": "brigadier:integer",
+                              "properties": {
+                                "min": 0
+                              },
+                              "executable":true
+                            }
+                          }
+                        },
 
-                        "ticks": {
-                          "type":"argument",
-                          "parser": "brigadier:integer",
-                          "properties": {
-                            "min": 0
-                          },
-                          "executable":true
+                        "decrease": {
+                          "type":"literal",
+                          "children": {
+
+                            "ticks": {
+                              "type":"argument",
+                              "parser": "brigadier:integer",
+                              "properties": {
+                                "min": 0
+                              },
+                              "executable":true
+                            }
+                          }
                         }
-                      }
+                      },
+                      "executable":true
                     }
-                  },
-                  "executable":true
+                  }
                 },
 
-                "movement/lateral_move": {
+                "operation": {
                   "type": "literal",
                   "children": {
 
-                    "clear": {
+                    "undefined": {
                       "type": "literal",
                       "executable": true
                     },
-
-                    "increase": {
-                      "type":"literal",
-                      "children": {
 
-                        "ticks": {
-                          "type":"argument",
-                          "parser": "brigadier:integer",
-                          "properties": {
-                            "min": 0
-                          },
-                          "executable":true
-                        }
-                      }
+                    "all": {
+                      "type": "literal",
+                      "executable": true
                     },
 
-                    "decrease": {
-                      "type":"literal",
-                      "children": {
+                    "movement": {
+                      "type": "literal",
+                      "executable": true
+                    },
 
-                        "ticks": {
-                          "type":"argument",
-                          "parser": "brigadier:integer",
-                          "properties": {
-                            "min": 0
-                          },
-                          "executable":true
-                        }
-                      }
-                    }
-                  },
-                  "executable":true
-                },
+                    "movement/lateral_move": {
+                      "type": "literal",
+                      "executable": true
+                    },
 
-                "movement/lateral_move/forward": {
-                  "type": "literal",
-                  "children": {
+                    "movement/lateral_move/forward": {
+                      "type": "literal",
+                      "executable": true
+                    },
 
-                    "clear": {
+                    "movement/lateral_move/backward": {
                       "type": "literal",
                       "executable": true
                     },
 
-                    "increase": {
-                      "type":"literal",
-                      "children": {
+                    "movement/lateral_move/left": {
+                      "type": "literal",
+                      "executable": true
+                    },
 
-                        "ticks": {
-                          "type":"argument",
-                          "parser": "brigadier:integer",
-                          "properties": {
-                            "min": 0
-                          },
-                          "executable":true
-                        }
-                      }
+                    "movement/lateral_move/right": {
+                      "type": "literal",
+                      "executable": true
                     },
 
-                    "decrease": {
-                      "type":"literal",
-                      "children": {
+                    "movement/jump": {
+                      "type": "literal",
+                      "executable": true
+                    },
 
-                        "ticks": {
-                          "type":"argument",
-                          "parser": "brigadier:integer",
-                          "properties": {
-                            "min": 0
-                          },
-                          "executable":true
-                        }
-                      }
-                    }
-                  },
-                  "executable":true
-                },
+                    "movement/sneak": {
+                      "type": "literal",
+                      "executable": true
+                    },
 
-                "movement/lateral_move/backward": {
-                  "type": "literal",
-                  "children": {
+                    "rotation": {
+                      "type": "literal",
+                      "executable": true
+                    },
 
-                    "clear": {
+                    "rotation/horizontal": {
                       "type": "literal",
                       "executable": true
                     },
 
-                    "increase": {
-                      "type":"literal",
-                      "children": {
+                    "rotation/vertical": {
+                      "type": "literal",
+                      "executable": true
+                    },
 
-                        "ticks": {
-                          "type":"argument",
-                          "parser": "brigadier:integer",
-                          "properties": {
-                            "min": 0
-                          },
-                          "executable":true
-                        }
-                      }
+                    "mouse": {
+                      "type": "literal",
+                      "executable": true
                     },
 
-                    "decrease": {
-                      "type":"literal",
-                      "children": {
+                    "mouse/attack": {
+                      "type": "literal",
+                      "executable": true
+                    },
 
-                        "ticks": {
-                          "type":"argument",
-                          "parser": "brigadier:integer",
-                          "properties": {
-                            "min": 0
-                          },
-                          "executable":true
-                        }
-                      }
-                    }
-                  },
-                  "executable":true
-                },
+                    "mouse/use": {
+                      "type": "literal",
+                      "executable": true
+                    },
 
-                "movement/lateral_move/left": {
-                  "type": "literal",
-                  "children": {
+                    "mouse/pick_item": {
+                      "type": "literal",
+                      "executable": true
+                    },
 
-                    "clear": {
+                    "smooth_camera": {
                       "type": "literal",
                       "executable": true
                     },
 
-                    "increase": {
-                      "type":"literal",
-                      "children": {
+                    "hotbar": {
+                      "type": "literal",
+                      "executable": true
+                    },
 
-                        "ticks": {
-                          "type":"argument",
-                          "parser": "brigadier:integer",
-                          "properties": {
-                            "min": 0
-                          },
-                          "executable":true
-                        }
-                      }
+                    "hotbar/1": {
+                      "type": "literal",
+                      "executable": true
                     },
 
-                    "decrease": {
-                      "type":"literal",
-                      "children": {
+                    "hotbar/2": {
+                      "type": "literal",
+                      "executable": true
+                    },
 
-                        "ticks": {
-                          "type":"argument",
-                          "parser": "brigadier:integer",
-                          "properties": {
-                            "min": 0
-                          },
-                          "executable":true
-                        }
-                      }
-                    }
-                  },
-                  "executable":true
-                },
+                    "hotbar/3": {
+                      "type": "literal",
+                      "executable": true
+                    },
 
-                "movement/lateral_move/right": {
-                  "type": "literal",
-                  "children": {
+                    "hotbar/4": {
+                      "type": "literal",
+                      "executable": true
+                    },
 
-                    "clear": {
+                    "hotbar/5": {
                       "type": "literal",
                       "executable": true
                     },
 
-                    "increase": {
-                      "type":"literal",
-                      "children": {
+                    "hotbar/6": {
+                      "type": "literal",
+                      "executable": true
+                    },
 
-                        "ticks": {
-                          "type":"argument",
-                          "parser": "brigadier:integer",
-                          "properties": {
-                            "min": 0
-                          },
-                          "executable":true
-                        }
-                      }
+                    "hotbar/7": {
+                      "type": "literal",
+                      "executable": true
                     },
 
-                    "decrease": {
-                      "type":"literal",
-                      "children": {
+                    "hotbar/8": {
+                      "type": "literal",
+                      "executable": true
+                    },
 
-                        "ticks": {
-                          "type":"argument",
-                          "parser": "brigadier:integer",
-                          "properties": {
-                            "min": 0
-                          },
-                          "executable":true
-                        }
-                      }
-                    }
-                  },
-                  "executable":true
-                },
+                    "hotbar/9": {
+                      "type": "literal",
+                      "executable": true
+                    },
 
-                "movement/jump": {
-                  "type": "literal",
-                  "children": {
+                    "social_interaction": {
+                      "type": "literal",
+                      "executable": true
+                    },
 
-                    "clear": {
+                    "inventory": {
                       "type": "literal",
                       "executable": true
                     },
 
-                    "increase": {
-                      "type":"literal",
-                      "children": {
+                    "advancement": {
+                      "type": "literal",
+                      "executable": true
+                    },
 
-                        "ticks": {
-                          "type":"argument",
-                          "parser": "brigadier:integer",
-                          "properties": {
-                            "min": 0
-                          },
-                          "executable":true
-                        }
-                      }
+                    "swap_hand": {
+                      "type": "literal",
+                      "executable": true
                     },
 
-                    "decrease": {
-                      "type":"literal",
-                      "children": {
+                    "drop_item": {
+                      "type": "literal",
+                      "executable": true
+                    },
 
-                        "ticks": {
-                          "type":"argument",
-                          "parser": "brigadier:integer",
-                          "properties": {
-                            "min": 0
-                          },
-                          "executable":true
-                        }
-                      }
+                    "chat": {
+                      "type": "literal",
+                      "executable": true
                     }
-                  },
-                  "executable":true
+                  }
                 },
 
-                "movement/sneak": {
+                "permission": {
                   "type": "literal",
                   "children": {
-
-                    "clear": {
+                    
+                    "undefined": {
                       "type": "literal",
-                      "executable": true
-                    },
-
-                    "increase": {
-                      "type":"literal",
                       "children": {
+
+                        "disable": {
+                          "type": "literal",
+                          "executable": true
+                        },
 
-                        "ticks": {
-                          "type":"argument",
-                          "parser": "brigadier:integer",
-                          "properties": {
-                            "min": 0
-                          },
-                          "executable":true
+                        "enable": {
+                          "type": "literal",
+                          "executable": true
                         }
-                      }
+                      },
+                      "executable":true
                     },
 
-                    "decrease": {
-                      "type":"literal",
+                    "all": {
+                      "type": "literal",
                       "children": {
-
-                        "ticks": {
-                          "type":"argument",
-                          "parser": "brigadier:integer",
-                          "properties": {
-                            "min": 0
-                          },
-                          "executable":true
-                        }
-                      }
-                    }
-                  },
-                  "executable":true
-                },
 
-                "rotation": {
-                  "type": "literal",
-                  "children": {
+                        "disable": {
+                          "type": "literal",
+                          "executable": true
+                        },
 
-                    "clear": {
-                      "type": "literal",
-                      "executable": true
+                        "enable": {
+                          "type": "literal",
+                          "executable": true
+                        }
+                      },
+                      "executable":true
                     },
 
-                    "increase": {
-                      "type":"literal",
+                    "movement": {
+                      "type": "literal",
                       "children": {
+
+                        "disable": {
+                          "type": "literal",
+                          "executable": true
+                        },
 
-                        "ticks": {
-                          "type":"argument",
-                          "parser": "brigadier:integer",
-                          "properties": {
-                            "min": 0
-                          },
-                          "executable":true
+                        "enable": {
+                          "type": "literal",
+                          "executable": true
                         }
-                      }
+                      },
+                      "executable":true
                     },
 
-                    "decrease": {
-                      "type":"literal",
+                    "movement/lateral_move": {
+                      "type": "literal",
                       "children": {
-
-                        "ticks": {
-                          "type":"argument",
-                          "parser": "brigadier:integer",
-                          "properties": {
-                            "min": 0
-                          },
-                          "executable":true
-                        }
-                      }
-                    }
-                  },
-                  "executable":true
-                },
 
-                "rotation/horizontal": {
-                  "type": "literal",
-                  "children": {
+                        "disable": {
+                          "type": "literal",
+                          "executable": true
+                        },
 
-                    "clear": {
-                      "type": "literal",
-                      "executable": true
+                        "enable": {
+                          "type": "literal",
+                          "executable": true
+                        }
+                      },
+                      "executable":true
                     },
 
-                    "increase": {
-                      "type":"literal",
+                    "movement/lateral_move/forward": {
+                      "type": "literal",
                       "children": {
+
+                        "disable": {
+                          "type": "literal",
+                          "executable": true
+                        },
 
-                        "ticks": {
-                          "type":"argument",
-                          "parser": "brigadier:integer",
-                          "properties": {
-                            "min": 0
-                          },
-                          "executable":true
+                        "enable": {
+                          "type": "literal",
+                          "executable": true
                         }
-                      }
+                      },
+                      "executable":true
                     },
 
-                    "decrease": {
-                      "type":"literal",
+                    "movement/lateral_move/backward": {
+                      "type": "literal",
                       "children": {
-
-                        "ticks": {
-                          "type":"argument",
-                          "parser": "brigadier:integer",
-                          "properties": {
-                            "min": 0
-                          },
-                          "executable":true
-                        }
-                      }
-                    }
-                  },
-                  "executable":true
-                },
 
-                "rotation/vertical": {
-                  "type": "literal",
-                  "children": {
+                        "disable": {
+                          "type": "literal",
+                          "executable": true
+                        },
 
-                    "clear": {
-                      "type": "literal",
-                      "executable": true
+                        "enable": {
+                          "type": "literal",
+                          "executable": true
+                        }
+                      },
+                      "executable":true
                     },
 
-                    "increase": {
-                      "type":"literal",
+                    "movement/lateral_move/left": {
+                      "type": "literal",
                       "children": {
+
+                        "disable": {
+                          "type": "literal",
+                          "executable": true
+                        },
 
-                        "ticks": {
-                          "type":"argument",
-                          "parser": "brigadier:integer",
-                          "properties": {
-                            "min": 0
-                          },
-                          "executable":true
+                        "enable": {
+                          "type": "literal",
+                          "executable": true
                         }
-                      }
+                      },
+                      "executable":true
                     },
 
-                    "decrease": {
-                      "type":"literal",
+                    "movement/lateral_move/right": {
+                      "type": "literal",
                       "children": {
-
-                        "ticks": {
-                          "type":"argument",
-                          "parser": "brigadier:integer",
-                          "properties": {
-                            "min": 0
-                          },
-                          "executable":true
-                        }
-                      }
-                    }
-                  },
-                  "executable":true
-                },
 
-                "mouse": {
-                  "type": "literal",
-                  "children": {
+                        "disable": {
+                          "type": "literal",
+                          "executable": true
+                        },
 
-                    "clear": {
-                      "type": "literal",
-                      "executable": true
+                        "enable": {
+                          "type": "literal",
+                          "executable": true
+                        }
+                      },
+                      "executable":true
                     },
 
-                    "increase": {
-                      "type":"literal",
+                    "movement/jump": {
+                      "type": "literal",
                       "children": {
+
+                        "disable": {
+                          "type": "literal",
+                          "executable": true
+                        },
 
-                        "ticks": {
-                          "type":"argument",
-                          "parser": "brigadier:integer",
-                          "properties": {
-                            "min": 0
-                          },
-                          "executable":true
+                        "enable": {
+                          "type": "literal",
+                          "executable": true
                         }
-                      }
+                      },
+                      "executable":true
                     },
 
-                    "decrease": {
-                      "type":"literal",
+                    "movement/sneak": {
+                      "type": "literal",
                       "children": {
-
-                        "ticks": {
-                          "type":"argument",
-                          "parser": "brigadier:integer",
-                          "properties": {
-                            "min": 0
-                          },
-                          "executable":true
-                        }
-                      }
-                    }
-                  },
-                  "executable":true
-                },
 
-                "mouse/attack": {
-                  "type": "literal",
-                  "children": {
+                        "disable": {
+                          "type": "literal",
+                          "executable": true
+                        },
 
-                    "clear": {
-                      "type": "literal",
-                      "executable": true
+                        "enable": {
+                          "type": "literal",
+                          "executable": true
+                        }
+                      },
+                      "executable":true
                     },
 
-                    "increase": {
-                      "type":"literal",
+                    "rotation": {
+                      "type": "literal",
                       "children": {
+
+                        "disable": {
+                          "type": "literal",
+                          "executable": true
+                        },
 
-                        "ticks": {
-                          "type":"argument",
-                          "parser": "brigadier:integer",
-                          "properties": {
-                            "min": 0
-                          },
-                          "executable":true
+                        "enable": {
+                          "type": "literal",
+                          "executable": true
                         }
-                      }
+                      },
+                      "executable":true
                     },
 
-                    "decrease": {
-                      "type":"literal",
+                    "rotation/horizontal": {
+                      "type": "literal",
                       "children": {
-
-                        "ticks": {
-                          "type":"argument",
-                          "parser": "brigadier:integer",
-                          "properties": {
-                            "min": 0
-                          },
-                          "executable":true
-                        }
-                      }
-                    }
-                  },
-                  "executable":true
-                },
 
-                "mouse/use": {
-                  "type": "literal",
-                  "children": {
+                        "disable": {
+                          "type": "literal",
+                          "executable": true
+                        },
 
-                    "clear": {
-                      "type": "literal",
-                      "executable": true
+                        "enable": {
+                          "type": "literal",
+                          "executable": true
+                        }
+                      },
+                      "executable":true
                     },
 
-                    "increase": {
-                      "type":"literal",
+                    "rotation/vertical": {
+                      "type": "literal",
                       "children": {
+
+                        "disable": {
+                          "type": "literal",
+                          "executable": true
+                        },
 
-                        "ticks": {
-                          "type":"argument",
-                          "parser": "brigadier:integer",
-                          "properties": {
-                            "min": 0
-                          },
-                          "executable":true
+                        "enable": {
+                          "type": "literal",
+                          "executable": true
                         }
-                      }
+                      },
+                      "executable":true
                     },
 
-                    "decrease": {
-                      "type":"literal",
+                    "mouse": {
+                      "type": "literal",
                       "children": {
-
-                        "ticks": {
-                          "type":"argument",
-                          "parser": "brigadier:integer",
-                          "properties": {
-                            "min": 0
-                          },
-                          "executable":true
-                        }
-                      }
-                    }
-                  },
-                  "executable":true
-                },
 
-                "mouse/pick_item": {
-                  "type": "literal",
-                  "children": {
+                        "disable": {
+                          "type": "literal",
+                          "executable": true
+                        },
 
-                    "clear": {
-                      "type": "literal",
-                      "executable": true
+                        "enable": {
+                          "type": "literal",
+                          "executable": true
+                        }
+                      },
+                      "executable":true
                     },
 
-                    "increase": {
-                      "type":"literal",
+                    "mouse/attack": {
+                      "type": "literal",
                       "children": {
+
+                        "disable": {
+                          "type": "literal",
+                          "executable": true
+                        },
 
-                        "ticks": {
-                          "type":"argument",
-                          "parser": "brigadier:integer",
-                          "properties": {
-                            "min": 0
-                          },
-                          "executable":true
+                        "enable": {
+                          "type": "literal",
+                          "executable": true
                         }
-                      }
+                      },
+                      "executable":true
                     },
 
-                    "decrease": {
-                      "type":"literal",
+                    "mouse/use": {
+                      "type": "literal",
                       "children": {
-
-                        "ticks": {
-                          "type":"argument",
-                          "parser": "brigadier:integer",
-                          "properties": {
-                            "min": 0
-                          },
-                          "executable":true
-                        }
-                      }
-                    }
-                  },
-                  "executable":true
-                },
 
-                "smooth_camera": {
-                  "type": "literal",
-                  "children": {
+                        "disable": {
+                          "type": "literal",
+                          "executable": true
+                        },
 
-                    "clear": {
-                      "type": "literal",
-                      "executable": true
+                        "enable": {
+                          "type": "literal",
+                          "executable": true
+                        }
+                      },
+                      "executable":true
                     },
 
-                    "increase": {
-                      "type":"literal",
+                    "mouse/pick_item": {
+                      "type": "literal",
                       "children": {
 
-                        "ticks": {
-                          "type":"argument",
-                          "parser": "brigadier:integer",
-                          "properties": {
-                            "min": 0
-                          },
-                          "executable":true
+                        "disable": {
+                          "type": "literal",
+                          "executable": true
+                        },
+
+                        "enable": {
+                          "type": "literal",
+                          "executable": true
                         }
-                      }
+                      },
+                      "executable":true
                     },
 
-                    "decrease": {
-                      "type":"literal",
+                    "smooth_camera": {
+                      "type": "literal",
                       "children": {
 
-                        "ticks": {
-                          "type":"argument",
-                          "parser": "brigadier:integer",
-                          "properties": {
-                            "min": 0
-                          },
-                          "executable":true
-                        }
-                      }
-                    }
-                  },
-                  "executable":true
-                },
-
-                "hotbar": {
-                  "type": "literal",
-                  "children": {
-
-                    "clear": {
-                      "type": "literal",
-                      "executable": true
-                    },
-
-                    "increase": {
-                      "type":"literal",
-                      "children": {
+                        "disable": {
+                          "type": "literal",
+                          "executable": true
+                        },
 
-                        "ticks": {
-                          "type":"argument",
-                          "parser": "brigadier:integer",
-                          "properties": {
-                            "min": 0
-                          },
-                          "executable":true
+                        "enable": {
+                          "type": "literal",
+                          "executable": true
                         }
-                      }
+                      },
+                      "executable":true
                     },
-
-                    "decrease": {
-                      "type":"literal",
-                      "children": {
-
-                        "ticks": {
-                          "type":"argument",
-                          "parser": "brigadier:integer",
-                          "properties": {
-                            "min": 0
-                          },
-                          "executable":true
-                        }
-                      }
-                    }
-                  },
-                  "executable":true
-                },
-
-                "hotbar/1": {
-                  "type": "literal",
-                  "children": {
 
-                    "clear": {
+                    "hotbar": {
                       "type": "literal",
-                      "executable": true
-                    },
-
-                    "increase": {
-                      "type":"literal",
                       "children": {
 
-                        "ticks": {
-                          "type":"argument",
-                          "parser": "brigadier:integer",
-                          "properties": {
-                            "min": 0
-                          },
-                          "executable":true
-                        }
-                      }
-                    },
-
-                    "decrease": {
-                      "type":"literal",
-                      "children": {
+                        "disable": {
+                          "type": "literal",
+                          "executable": true
+                        },
 
-                        "ticks": {
-                          "type":"argument",
-                          "parser": "brigadier:integer",
-                          "properties": {
-                            "min": 0
-                          },
-                          "executable":true
+                        "enable": {
+                          "type": "literal",
+                          "executable": true
                         }
-                      }
-                    }
-                  },
-                  "executable":true
-                },
-
-                "hotbar/2": {
-                  "type": "literal",
-                  "children": {
-
-                    "clear": {
-                      "type": "literal",
-                      "executable": true
+                      },
+                      "executable":true
                     },
 
-                    "increase": {
-                      "type":"literal",
+                    "hotbar/1": {
+                      "type": "literal",
                       "children": {
-
-                        "ticks": {
-                          "type":"argument",
-                          "parser": "brigadier:integer",
-                          "properties": {
-                            "min": 0
-                          },
-                          "executable":true
-                        }
-                      }
-                    },
 
-                    "decrease": {
-                      "type":"literal",
-                      "children": {
+                        "disable": {
+                          "type": "literal",
+                          "executable": true
+                        },
 
-                        "ticks": {
-                          "type":"argument",
-                          "parser": "brigadier:integer",
-                          "properties": {
-                            "min": 0
-                          },
-                          "executable":true
+                        "enable": {
+                          "type": "literal",
+                          "executable": true
                         }
-                      }
-                    }
-                  },
-                  "executable":true
-                },
-
-                "hotbar/3": {
-                  "type": "literal",
-                  "children": {
-
-                    "clear": {
-                      "type": "literal",
-                      "executable": true
+                      },
+                      "executable":true
                     },
 
-                    "increase": {
-                      "type":"literal",
+                    "hotbar/2": {
+                      "type": "literal",
                       "children": {
-
-                        "ticks": {
-                          "type":"argument",
-                          "parser": "brigadier:integer",
-                          "properties": {
-                            "min": 0
-                          },
-                          "executable":true
-                        }
-                      }
-                    },
 
-                    "decrease": {
-                      "type":"literal",
-                      "children": {
+                        "disable": {
+                          "type": "literal",
+                          "executable": true
+                        },
 
-                        "ticks": {
-                          "type":"argument",
-                          "parser": "brigadier:integer",
-                          "properties": {
-                            "min": 0
-                          },
-                          "executable":true
+                        "enable": {
+                          "type": "literal",
+                          "executable": true
                         }
-                      }
-                    }
-                  },
-                  "executable":true
-                },
-
-                "hotbar/4": {
-                  "type": "literal",
-                  "children": {
-
-                    "clear": {
-                      "type": "literal",
-                      "executable": true
+                      },
+                      "executable":true
                     },
 
-                    "increase": {
-                      "type":"literal",
+                    "hotbar/3": {
+                      "type": "literal",
                       "children": {
-
-                        "ticks": {
-                          "type":"argument",
-                          "parser": "brigadier:integer",
-                          "properties": {
-                            "min": 0
-                          },
-                          "executable":true
-                        }
-                      }
-                    },
 
-                    "decrease": {
-                      "type":"literal",
-                      "children": {
+                        "disable": {
+                          "type": "literal",
+                          "executable": true
+                        },
 
-                        "ticks": {
-                          "type":"argument",
-                          "parser": "brigadier:integer",
-                          "properties": {
-                            "min": 0
-                          },
-                          "executable":true
+                        "enable": {
+                          "type": "literal",
+                          "executable": true
                         }
-                      }
-                    }
-                  },
-                  "executable":true
-                },
-
-                "hotbar/5": {
-                  "type": "literal",
-                  "children": {
-
-                    "clear": {
-                      "type": "literal",
-                      "executable": true
+                      },
+                      "executable":true
                     },
 
-                    "increase": {
-                      "type":"literal",
+                    "hotbar/4": {
+                      "type": "literal",
                       "children": {
 
-                        "ticks": {
-                          "type":"argument",
-                          "parser": "brigadier:integer",
-                          "properties": {
-                            "min": 0
-                          },
-                          "executable":true
-                        }
-                      }
-                    },
-
-                    "decrease": {
-                      "type":"literal",
-                      "children": {
+                        "disable": {
+                          "type": "literal",
+                          "executable": true
+                        },
 
-                        "ticks": {
-                          "type":"argument",
-                          "parser": "brigadier:integer",
-                          "properties": {
-                            "min": 0
-                          },
-                          "executable":true
+                        "enable": {
+                          "type": "literal",
+                          "executable": true
                         }
-                      }
-                    }
-                  },
-                  "executable":true
-                },
-
-                "hotbar/6": {
-                  "type": "literal",
-                  "children": {
-
-                    "clear": {
-                      "type": "literal",
-                      "executable": true
+                      },
+                      "executable":true
                     },
 
-                    "increase": {
-                      "type":"literal",
+                    "hotbar/5": {
+                      "type": "literal",
                       "children": {
-
-                        "ticks": {
-                          "type":"argument",
-                          "parser": "brigadier:integer",
-                          "properties": {
-                            "min": 0
-                          },
-                          "executable":true
-                        }
-                      }
-                    },
 
-                    "decrease": {
-                      "type":"literal",
-                      "children": {
+                        "disable": {
+                          "type": "literal",
+                          "executable": true
+                        },
 
-                        "ticks": {
-                          "type":"argument",
-                          "parser": "brigadier:integer",
-                          "properties": {
-                            "min": 0
-                          },
-                          "executable":true
+                        "enable": {
+                          "type": "literal",
+                          "executable": true
                         }
-                      }
-                    }
-                  },
-                  "executable":true
-                },
-
-                "hotbar/7": {
-                  "type": "literal",
-                  "children": {
-
-                    "clear": {
-                      "type": "literal",
-                      "executable": true
+                      },
+                      "executable":true
                     },
 
-                    "increase": {
-                      "type":"literal",
+                    "hotbar/6": {
+                      "type": "literal",
                       "children": {
-
-                        "ticks": {
-                          "type":"argument",
-                          "parser": "brigadier:integer",
-                          "properties": {
-                            "min": 0
-                          },
-                          "executable":true
-                        }
-                      }
-                    },
 
-                    "decrease": {
-                      "type":"literal",
-                      "children": {
+                        "disable": {
+                          "type": "literal",
+                          "executable": true
+                        },
 
-                        "ticks": {
-                          "type":"argument",
-                          "parser": "brigadier:integer",
-                          "properties": {
-                            "min": 0
-                          },
-                          "executable":true
+                        "enable": {
+                          "type": "literal",
+                          "executable": true
                         }
-                      }
-                    }
-                  },
-                  "executable":true
-                },
-
-                "hotbar/8": {
-                  "type": "literal",
-                  "children": {
-
-                    "clear": {
-                      "type": "literal",
-                      "executable": true
+                      },
+                      "executable":true
                     },
 
-                    "increase": {
-                      "type":"literal",
+                    "hotbar/7": {
+                      "type": "literal",
                       "children": {
-
-                        "ticks": {
-                          "type":"argument",
-                          "parser": "brigadier:integer",
-                          "properties": {
-                            "min": 0
-                          },
-                          "executable":true
-                        }
-                      }
-                    },
 
-                    "decrease": {
-                      "type":"literal",
-                      "children": {
+                        "disable": {
+                          "type": "literal",
+                          "executable": true
+                        },
 
-                        "ticks": {
-                          "type":"argument",
-                          "parser": "brigadier:integer",
-                          "properties": {
-                            "min": 0
-                          },
-                          "executable":true
+                        "enable": {
+                          "type": "literal",
+                          "executable": true
                         }
-                      }
-                    }
-                  },
-                  "executable":true
-                },
-
-                "hotbar/9": {
-                  "type": "literal",
-                  "children": {
-
-                    "clear": {
-                      "type": "literal",
-                      "executable": true
+                      },
+                      "executable":true
                     },
 
-                    "increase": {
-                      "type":"literal",
+                    "hotbar/8": {
+                      "type": "literal",
                       "children": {
 
-                        "ticks": {
-                          "type":"argument",
-                          "parser": "brigadier:integer",
-                          "properties": {
-                            "min": 0
-                          },
-                          "executable":true
-                        }
-                      }
-                    },
-
-                    "decrease": {
-                      "type":"literal",
-                      "children": {
+                        "disable": {
+                          "type": "literal",
+                          "executable": true
+                        },
 
-                        "ticks": {
-                          "type":"argument",
-                          "parser": "brigadier:integer",
-                          "properties": {
-                            "min": 0
-                          },
-                          "executable":true
+                        "enable": {
+                          "type": "literal",
+                          "executable": true
                         }
-                      }
-                    }
-                  },
-                  "executable":true
-                },
-
-                "social_interaction": {
-                  "type": "literal",
-                  "children": {
-
-                    "clear": {
-                      "type": "literal",
-                      "executable": true
+                      },
+                      "executable":true
                     },
 
-                    "increase": {
-                      "type":"literal",
+                    "hotbar/9": {
+                      "type": "literal",
                       "children": {
-
-                        "ticks": {
-                          "type":"argument",
-                          "parser": "brigadier:integer",
-                          "properties": {
-                            "min": 0
-                          },
-                          "executable":true
-                        }
-                      }
-                    },
 
-                    "decrease": {
-                      "type":"literal",
-                      "children": {
+                        "disable": {
+                          "type": "literal",
+                          "executable": true
+                        },
 
-                        "ticks": {
-                          "type":"argument",
-                          "parser": "brigadier:integer",
-                          "properties": {
-                            "min": 0
-                          },
-                          "executable":true
+                        "enable": {
+                          "type": "literal",
+                          "executable": true
                         }
-                      }
-                    }
-                  },
-                  "executable":true
-                },
-
-                "inventory": {
-                  "type": "literal",
-                  "children": {
-
-                    "clear": {
-                      "type": "literal",
-                      "executable": true
+                      },
+                      "executable":true
                     },
 
-                    "increase": {
-                      "type":"literal",
+                    "social_interaction": {
+                      "type": "literal",
                       "children": {
-
-                        "ticks": {
-                          "type":"argument",
-                          "parser": "brigadier:integer",
-                          "properties": {
-                            "min": 0
-                          },
-                          "executable":true
-                        }
-                      }
-                    },
 
-                    "decrease": {
-                      "type":"literal",
-                      "children": {
+                        "disable": {
+                          "type": "literal",
+                          "executable": true
+                        },
 
-                        "ticks": {
-                          "type":"argument",
-                          "parser": "brigadier:integer",
-                          "properties": {
-                            "min": 0
-                          },
-                          "executable":true
+                        "enable": {
+                          "type": "literal",
+                          "executable": true
                         }
-                      }
-                    }
-                  },
-                  "executable":true
-                },
-
-                "advancement": {
-                  "type": "literal",
-                  "children": {
-
-                    "clear": {
-                      "type": "literal",
-                      "executable": true
+                      },
+                      "executable":true
                     },
 
-                    "increase": {
-                      "type":"literal",
+                    "inventory": {
+                      "type": "literal",
                       "children": {
-
-                        "ticks": {
-                          "type":"argument",
-                          "parser": "brigadier:integer",
-                          "properties": {
-                            "min": 0
-                          },
-                          "executable":true
-                        }
-                      }
-                    },
 
-                    "decrease": {
-                      "type":"literal",
-                      "children": {
+                        "disable": {
+                          "type": "literal",
+                          "executable": true
+                        },
 
-                        "ticks": {
-                          "type":"argument",
-                          "parser": "brigadier:integer",
-                          "properties": {
-                            "min": 0
-                          },
-                          "executable":true
+                        "enable": {
+                          "type": "literal",
+                          "executable": true
                         }
-                      }
-                    }
-                  },
-                  "executable":true
-                },
-
-                "swap_hand": {
-                  "type": "literal",
-                  "children": {
-
-                    "clear": {
-                      "type": "literal",
-                      "executable": true
+                      },
+                      "executable":true
                     },
 
-                    "increase": {
-                      "type":"literal",
+                    "advancement": {
+                      "type": "literal",
                       "children": {
 
-                        "ticks": {
-                          "type":"argument",
-                          "parser": "brigadier:integer",
-                          "properties": {
-                            "min": 0
-                          },
-                          "executable":true
-                        }
-                      }
-                    },
-
-                    "decrease": {
-                      "type":"literal",
-                      "children": {
+                        "disable": {
+                          "type": "literal",
+                          "executable": true
+                        },
 
-                        "ticks": {
-                          "type":"argument",
-                          "parser": "brigadier:integer",
-                          "properties": {
-                            "min": 0
-                          },
-                          "executable":true
+                        "enable": {
+                          "type": "literal",
+                          "executable": true
                         }
-                      }
-                    }
-                  },
-                  "executable":true
-                },
-
-                "drop_item": {
-                  "type": "literal",
-                  "children": {
-
-                    "clear": {
-                      "type": "literal",
-                      "executable": true
+                      },
+                      "executable":true
                     },
 
-                    "increase": {
-                      "type":"literal",
+                    "swap_hand": {
+                      "type": "literal",
                       "children": {
-
-                        "ticks": {
-                          "type":"argument",
-                          "parser": "brigadier:integer",
-                          "properties": {
-                            "min": 0
-                          },
-                          "executable":true
-                        }
-                      }
-                    },
 
-                    "decrease": {
-                      "type":"literal",
-                      "children": {
+                        "disable": {
+                          "type": "literal",
+                          "executable": true
+                        },
 
-                        "ticks": {
-                          "type":"argument",
-                          "parser": "brigadier:integer",
-                          "properties": {
-                            "min": 0
-                          },
-                          "executable":true
+                        "enable": {
+                          "type": "literal",
+                          "executable": true
                         }
-                      }
-                    }
-                  },
-                  "executable":true
-                },
-
-                "chat": {
-                  "type": "literal",
-                  "children": {
-
-                    "clear": {
-                      "type": "literal",
-                      "executable": true
+                      },
+                      "executable":true
                     },
 
-                    "increase": {
-                      "type":"literal",
+                    "drop_item": {
+                      "type": "literal",
                       "children": {
 
-                        "ticks": {
-                          "type":"argument",
-                          "parser": "brigadier:integer",
-                          "properties": {
-                            "min": 0
-                          },
-                          "executable":true
+                        "disable": {
+                          "type": "literal",
+                          "executable": true
+                        },
+
+                        "enable": {
+                          "type": "literal",
+                          "executable": true
                         }
-                      }
+                      },
+                      "executable":true
                     },
 
-                    "decrease": {
-                      "type":"literal",
+                    "chat": {
+                      "type": "literal",
                       "children": {
-
-                        "ticks": {
-                          "type":"argument",
-                          "parser": "brigadier:integer",
-                          "properties": {
-                            "min": 0
-                          },
-                          "executable":true
-                        }
-                      }
-                    }
-                  },
-                  "executable":true
-                }
-              }
-            },
-
-            "operation": {
-              "type": "literal",
-              "children": {
-
-                "undefined": {
-                  "type": "literal",
-                  "executable": true
-                },
-
-                "all": {
-                  "type": "literal",
-                  "executable": true
-                },
-
-                "movement": {
-                  "type": "literal",
-                  "executable": true
-                },
-
-                "movement/lateral_move": {
-                  "type": "literal",
-                  "executable": true
-                },
-
-                "movement/lateral_move/forward": {
-                  "type": "literal",
-                  "executable": true
-                },
-
-                "movement/lateral_move/backward": {
-                  "type": "literal",
-                  "executable": true
-                },
-
-                "movement/lateral_move/left": {
-                  "type": "literal",
-                  "executable": true
-                },
-
-                "movement/lateral_move/right": {
-                  "type": "literal",
-                  "executable": true
-                },
-
-                "movement/jump": {
-                  "type": "literal",
-                  "executable": true
-                },
-
-                "movement/sneak": {
-                  "type": "literal",
-                  "executable": true
-                },
 
-                "rotation": {
-                  "type": "literal",
-                  "executable": true
-                },
-
-                "rotation/horizontal": {
-                  "type": "literal",
-                  "executable": true
-                },
-
-                "rotation/vertical": {
-                  "type": "literal",
-                  "executable": true
-                },
-
-                "mouse": {
-                  "type": "literal",
-                  "executable": true
-                },
-
-                "mouse/attack": {
-                  "type": "literal",
-                  "executable": true
-                },
-
-                "mouse/use": {
-                  "type": "literal",
-                  "executable": true
-                },
+                        "disable": {
+                          "type": "literal",
+                          "executable": true
+                        },
 
-                "mouse/pick_item": {
-                  "type": "literal",
-                  "executable": true
-                },
-
-                "smooth_camera": {
-                  "type": "literal",
-                  "executable": true
-                },
-
-                "hotbar": {
-                  "type": "literal",
-                  "executable": true
-                },
-
-                "hotbar/1": {
-                  "type": "literal",
-                  "executable": true
-                },
-
-                "hotbar/2": {
-                  "type": "literal",
-                  "executable": true
-                },
-
-                "hotbar/3": {
-                  "type": "literal",
-                  "executable": true
-                },
-
-                "hotbar/4": {
-                  "type": "literal",
-                  "executable": true
-                },
-
-                "hotbar/5": {
-                  "type": "literal",
-                  "executable": true
-                },
-
-                "hotbar/6": {
-                  "type": "literal",
-                  "executable": true
-                },
-
-                "hotbar/7": {
-                  "type": "literal",
-                  "executable": true
-                },
-
-                "hotbar/8": {
-                  "type": "literal",
-                  "executable": true
-                },
-
-                "hotbar/9": {
-                  "type": "literal",
-                  "executable": true
-                },
-
-                "social_interaction": {
-                  "type": "literal",
-                  "executable": true
-                },
-
-                "inventory": {
-                  "type": "literal",
-                  "executable": true
-                },
-
-                "advancement": {
-                  "type": "literal",
-                  "executable": true
-                },
-
-                "swap_hand": {
-                  "type": "literal",
-                  "executable": true
-                },
-
-                "drop_item": {
-                  "type": "literal",
-                  "executable": true
-                },
-
-                "chat": {
-                  "type": "literal",
-                  "executable": true
-                }
-              }
-            },
-
-            "permission": {
-              "type": "literal",
-              "children": {
-                
-                "undefined": {
-                  "type": "literal",
-                  "children": {
-
-                    "disable": {
-                      "type": "literal",
-                      "executable": true
-                    },
-
-                    "enable": {
-                      "type": "literal",
-                      "executable": true
-                    }
-                  },
-                  "executable":true
-                },
-
-                "all": {
-                  "type": "literal",
-                  "children": {
-
-                    "disable": {
-                      "type": "literal",
-                      "executable": true
-                    },
-
-                    "enable": {
-                      "type": "literal",
-                      "executable": true
-                    }
-                  },
-                  "executable":true
-                },
-
-                "movement": {
-                  "type": "literal",
-                  "children": {
-
-                    "disable": {
-                      "type": "literal",
-                      "executable": true
-                    },
-
-                    "enable": {
-                      "type": "literal",
-                      "executable": true
-                    }
-                  },
-                  "executable":true
-                },
-
-                "movement/lateral_move": {
-                  "type": "literal",
-                  "children": {
-
-                    "disable": {
-                      "type": "literal",
-                      "executable": true
-                    },
-
-                    "enable": {
-                      "type": "literal",
-                      "executable": true
-                    }
-                  },
-                  "executable":true
-                },
-
-                "movement/lateral_move/forward": {
-                  "type": "literal",
-                  "children": {
-
-                    "disable": {
-                      "type": "literal",
-                      "executable": true
-                    },
-
-                    "enable": {
-                      "type": "literal",
-                      "executable": true
-                    }
-                  },
-                  "executable":true
-                },
-
-                "movement/lateral_move/backward": {
-                  "type": "literal",
-                  "children": {
-
-                    "disable": {
-                      "type": "literal",
-                      "executable": true
-                    },
-
-                    "enable": {
-                      "type": "literal",
-                      "executable": true
-                    }
-                  },
-                  "executable":true
-                },
-
-                "movement/lateral_move/left": {
-                  "type": "literal",
-                  "children": {
-
-                    "disable": {
-                      "type": "literal",
-                      "executable": true
-                    },
-
-                    "enable": {
-                      "type": "literal",
-                      "executable": true
-                    }
-                  },
-                  "executable":true
-                },
-
-                "movement/lateral_move/right": {
-                  "type": "literal",
-                  "children": {
-
-                    "disable": {
-                      "type": "literal",
-                      "executable": true
-                    },
-
-                    "enable": {
-                      "type": "literal",
-                      "executable": true
-                    }
-                  },
-                  "executable":true
-                },
-
-                "movement/jump": {
-                  "type": "literal",
-                  "children": {
-
-                    "disable": {
-                      "type": "literal",
-                      "executable": true
-                    },
-
-                    "enable": {
-                      "type": "literal",
-                      "executable": true
-                    }
-                  },
-                  "executable":true
-                },
-
-                "movement/sneak": {
-                  "type": "literal",
-                  "children": {
-
-                    "disable": {
-                      "type": "literal",
-                      "executable": true
-                    },
-
-                    "enable": {
-                      "type": "literal",
-                      "executable": true
-                    }
-                  },
-                  "executable":true
-                },
-
-                "rotation": {
-                  "type": "literal",
-                  "children": {
-
-                    "disable": {
-                      "type": "literal",
-                      "executable": true
-                    },
-
-                    "enable": {
-                      "type": "literal",
-                      "executable": true
-                    }
-                  },
-                  "executable":true
-                },
-
-                "rotation/horizontal": {
-                  "type": "literal",
-                  "children": {
-
-                    "disable": {
-                      "type": "literal",
-                      "executable": true
-                    },
-
-                    "enable": {
-                      "type": "literal",
-                      "executable": true
-                    }
-                  },
-                  "executable":true
-                },
-
-                "rotation/vertical": {
-                  "type": "literal",
-                  "children": {
-
-                    "disable": {
-                      "type": "literal",
-                      "executable": true
-                    },
-
-                    "enable": {
-                      "type": "literal",
-                      "executable": true
-                    }
-                  },
-                  "executable":true
-                },
-
-                "mouse": {
-                  "type": "literal",
-                  "children": {
-
-                    "disable": {
-                      "type": "literal",
-                      "executable": true
-                    },
-
-                    "enable": {
-                      "type": "literal",
-                      "executable": true
-                    }
-                  },
-                  "executable":true
-                },
-
-                "mouse/attack": {
-                  "type": "literal",
-                  "children": {
-
-                    "disable": {
-                      "type": "literal",
-                      "executable": true
-                    },
-
-                    "enable": {
-                      "type": "literal",
-                      "executable": true
-                    }
-                  },
-                  "executable":true
-                },
-
-                "mouse/use": {
-                  "type": "literal",
-                  "children": {
-
-                    "disable": {
-                      "type": "literal",
-                      "executable": true
-                    },
-
-                    "enable": {
-                      "type": "literal",
-                      "executable": true
-                    }
-                  },
-                  "executable":true
-                },
-
-                "mouse/pick_item": {
-                  "type": "literal",
-                  "children": {
-
-                    "disable": {
-                      "type": "literal",
-                      "executable": true
-                    },
-
-                    "enable": {
-                      "type": "literal",
-                      "executable": true
-                    }
-                  },
-                  "executable":true
-                },
-
-                "smooth_camera": {
-                  "type": "literal",
-                  "children": {
-
-                    "disable": {
-                      "type": "literal",
-                      "executable": true
-                    },
-
-                    "enable": {
-                      "type": "literal",
-                      "executable": true
-                    }
-                  },
-                  "executable":true
-                },
-
-                "hotbar": {
-                  "type": "literal",
-                  "children": {
-
-                    "disable": {
-                      "type": "literal",
-                      "executable": true
-                    },
-
-                    "enable": {
-                      "type": "literal",
-                      "executable": true
-                    }
-                  },
-                  "executable":true
-                },
-
-                "hotbar/1": {
-                  "type": "literal",
-                  "children": {
-
-                    "disable": {
-                      "type": "literal",
-                      "executable": true
-                    },
-
-                    "enable": {
-                      "type": "literal",
-                      "executable": true
-                    }
-                  },
-                  "executable":true
-                },
-
-                "hotbar/2": {
-                  "type": "literal",
-                  "children": {
-
-                    "disable": {
-                      "type": "literal",
-                      "executable": true
-                    },
-
-                    "enable": {
-                      "type": "literal",
-                      "executable": true
-                    }
-                  },
-                  "executable":true
-                },
-
-                "hotbar/3": {
-                  "type": "literal",
-                  "children": {
-
-                    "disable": {
-                      "type": "literal",
-                      "executable": true
-                    },
-
-                    "enable": {
-                      "type": "literal",
-                      "executable": true
-                    }
-                  },
-                  "executable":true
-                },
-
-                "hotbar/4": {
-                  "type": "literal",
-                  "children": {
-
-                    "disable": {
-                      "type": "literal",
-                      "executable": true
-                    },
-
-                    "enable": {
-                      "type": "literal",
-                      "executable": true
-                    }
-                  },
-                  "executable":true
-                },
-
-                "hotbar/5": {
-                  "type": "literal",
-                  "children": {
-
-                    "disable": {
-                      "type": "literal",
-                      "executable": true
-                    },
-
-                    "enable": {
-                      "type": "literal",
-                      "executable": true
-                    }
-                  },
-                  "executable":true
-                },
-
-                "hotbar/6": {
-                  "type": "literal",
-                  "children": {
-
-                    "disable": {
-                      "type": "literal",
-                      "executable": true
-                    },
-
-                    "enable": {
-                      "type": "literal",
-                      "executable": true
-                    }
-                  },
-                  "executable":true
-                },
-
-                "hotbar/7": {
-                  "type": "literal",
-                  "children": {
-
-                    "disable": {
-                      "type": "literal",
-                      "executable": true
-                    },
-
-                    "enable": {
-                      "type": "literal",
-                      "executable": true
-                    }
-                  },
-                  "executable":true
-                },
-
-                "hotbar/8": {
-                  "type": "literal",
-                  "children": {
-
-                    "disable": {
-                      "type": "literal",
-                      "executable": true
-                    },
-
-                    "enable": {
-                      "type": "literal",
-                      "executable": true
-                    }
-                  },
-                  "executable":true
-                },
-
-                "hotbar/9": {
-                  "type": "literal",
-                  "children": {
-
-                    "disable": {
-                      "type": "literal",
-                      "executable": true
-                    },
-
-                    "enable": {
-                      "type": "literal",
-                      "executable": true
-                    }
-                  },
-                  "executable":true
-                },
-
-                "social_interaction": {
-                  "type": "literal",
-                  "children": {
-
-                    "disable": {
-                      "type": "literal",
-                      "executable": true
-                    },
-
-                    "enable": {
-                      "type": "literal",
-                      "executable": true
-                    }
-                  },
-                  "executable":true
-                },
-
-                "inventory": {
-                  "type": "literal",
-                  "children": {
-
-                    "disable": {
-                      "type": "literal",
-                      "executable": true
-                    },
-
-                    "enable": {
-                      "type": "literal",
-                      "executable": true
-                    }
-                  },
-                  "executable":true
-                },
-
-                "advancement": {
-                  "type": "literal",
-                  "children": {
-
-                    "disable": {
-                      "type": "literal",
-                      "executable": true
-                    },
-
-                    "enable": {
-                      "type": "literal",
-                      "executable": true
-                    }
-                  },
-                  "executable":true
-                },
-
-                "swap_hand": {
-                  "type": "literal",
-                  "children": {
-
-                    "disable": {
-                      "type": "literal",
-                      "executable": true
-                    },
-
-                    "enable": {
-                      "type": "literal",
-                      "executable": true
-                    }
-                  },
-                  "executable":true
-                },
-
-                "drop_item": {
-                  "type": "literal",
-                  "children": {
-
-                    "disable": {
-                      "type": "literal",
-                      "executable": true
-                    },
-
-                    "enable": {
-                      "type": "literal",
-                      "executable": true
-                    }
-                  },
-                  "executable":true
-                },
-
-                "chat": {
-                  "type": "literal",
-                  "children": {
-
-                    "disable": {
-                      "type": "literal",
-                      "executable": true
-                    },
-
-                    "enable": {
-                      "type": "literal",
-                      "executable": true
+                        "enable": {
+                          "type": "literal",
+                          "executable": true
+                        }
+                      },
+                      "executable":true
                     }
-                  },
-                  "executable":true
+                  }
                 }
               }
             }
