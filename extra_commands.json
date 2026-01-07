@@ -6,6 +6,53 @@
       "type":"literal",
       "children": {
 
+        "entityAnimate": {
+          "type": "literal",
+          "children": {
+
+            "entities": {
+              "type": "argument",
+              "parser": "minecraft:entity",
+              "properties": {
+                "amount": "multiple",
+                "type":"entities"
+              },
+              "children": {
+
+                "SWING_MAIN_HAND": {
+                  "type":"argument",
+                  "parser":"brigadier:float",
+                  "executable": true
+                },
+
+                "WAKE_UP": {
+                  "type":"argument",
+                  "parser":"brigadier:float",
+                  "executable": true
+                },
+
+                "SWING_OFF_HAND": {
+                  "type":"argument",
+                  "parser":"brigadier:float",
+                  "executable": true
+                },
+
+                "CRITICAL_HIT": {
+                  "type":"argument",
+                  "parser":"brigadier:float",
+                  "executable": true
+                },
+
+                "MAGIC_CRITICAL_HIT": {
+                  "type":"argument",
+                  "parser":"brigadier:float",
+                  "executable": true
+                }
+              }
+            }
+          }
+        },
+
         "heal": {
           "type": "literal",
           "children": {
