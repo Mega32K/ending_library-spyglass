@@ -20,32 +20,27 @@
               "children": {
 
                 "SWING_MAIN_HAND": {
-                  "type":"argument",
-                  "parser":"brigadier:float",
+                  "type":"literal",
                   "executable": true
                 },
 
                 "WAKE_UP": {
-                  "type":"argument",
-                  "parser":"brigadier:float",
+                  "type":"literal",
                   "executable": true
                 },
 
                 "SWING_OFF_HAND": {
-                  "type":"argument",
-                  "parser":"brigadier:float",
+                  "type":"literal",
                   "executable": true
                 },
 
                 "CRITICAL_HIT": {
-                  "type":"argument",
-                  "parser":"brigadier:float",
+                  "type":"literal",
                   "executable": true
                 },
 
                 "MAGIC_CRITICAL_HIT": {
-                  "type":"argument",
-                  "parser":"brigadier:float",
+                  "type":"literal",
                   "executable": true
                 }
               }
