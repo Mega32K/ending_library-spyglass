@@ -5264,11 +5264,21 @@
 
                     "name": {
                       "type":"argument",
-                      "parser": "brigadier:float",
+                      "parser": "brigadier:string",
                       "properties": {
-                        "min": 0
+                        "type" : "word"
                       },
-                      "executable":true
+                      "children": {
+
+                        "life": {
+                          "type":"argument",
+                          "parser": "brigadier:float",
+                          "properties": {
+                            "min": 0
+                          },
+                          "executable":true
+                        }
+                      }
                     }
                   }
                 },
