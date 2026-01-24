@@ -6465,7 +6465,7 @@
                   "executable": true
                 },
 
-                "render_scale_interpoaltion_duration": {
+                "render_scale_interpolation_duration": {
                   "type": "literal",
                   "children": { 
 
