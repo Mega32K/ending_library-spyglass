@@ -6286,6 +6286,199 @@
                     }
                   },
                   "executable": true
+                },
+
+                "render_scale_easing": {
+                  "type": "literal",
+                  "children": {
+
+                    "LINEAR": {
+                      "type":"literal",
+                      "executable":true
+                    },
+
+                    "CONSTANT": {
+                      "type":"literal",
+                      "executable":true
+                    },
+
+                    "IN_SINE": {
+                      "type":"literal",
+                      "executable":true
+                    },
+
+                    "OUT_SINE": {
+                      "type":"literal",
+                      "executable":true
+                    },
+
+                    "IN_OUT_SINE": {
+                      "type":"literal",
+                      "executable":true
+                    },
+
+                    "IN_QUAD": {
+                      "type":"literal",
+                      "executable":true
+                    },
+
+                    "OUT_QUAD": {
+                      "type":"literal",
+                      "executable":true
+                    },
+
+                    "IN_OUT_QUAD": {
+                      "type":"literal",
+                      "executable":true
+                    },
+
+                    "IN_CUBIC": {
+                      "type":"literal",
+                      "executable":true
+                    },
+
+                    "OUT_CUBIC": {
+                      "type":"literal",
+                      "executable":true
+                    },
+
+                    "INVERSE_OUT_CUBIC": {
+                      "type":"literal",
+                      "executable":true
+                    },
+
+                    "IN_OUT_CUBIC": {
+                      "type":"literal",
+                      "executable":true
+                    },
+
+                    "IN_QUART": {
+                      "type":"literal",
+                      "executable":true
+                    },
+
+                    "OUT_QUART": {
+                      "type":"literal",
+                      "executable":true
+                    },
+
+                    "IN_OUT_QUART": {
+                      "type":"literal",
+                      "executable":true
+                    },
+
+                    "IN_QUINT": {
+                      "type":"literal",
+                      "executable":true
+                    },
+
+                    "OUT_QUINT": {
+                      "type":"literal",
+                      "executable":true
+                    },
+
+                    "IN_OUT_QUINT": {
+                      "type":"literal",
+                      "executable":true
+                    },
+
+                    "IN_EXPO": {
+                      "type":"literal",
+                      "executable":true
+                    },
+
+                    "OUT_EXPO": {
+                      "type":"literal",
+                      "executable":true
+                    },
+
+                    "IN_OUT_EXPO": {
+                      "type":"literal",
+                      "executable":true
+                    },
+
+                    "IN_CIRC": {
+                      "type":"literal",
+                      "executable":true
+                    },
+
+                    "OUT_CIRC": {
+                      "type":"literal",
+                      "executable":true
+                    },
+
+                    "IN_OUT_CIRC": {
+                      "type":"literal",
+                      "executable":true
+                    },
+
+                    "IN_BACK": {
+                      "type":"literal",
+                      "executable":true
+                    },
+
+                    "OUT_BACK": {
+                      "type":"literal",
+                      "executable":true
+                    },
+
+                    "IN_OUT_BACK": {
+                      "type":"literal",
+                      "executable":true
+                    },
+
+                    "IN_ELASTIC": {
+                      "type":"literal",
+                      "executable":true
+                    },
+
+                    "OUT_ELASTIC": {
+                      "type":"literal",
+                      "executable":true
+                    },
+
+                    "IN_OUT_ELASTIC": {
+                      "type":"literal",
+                      "executable":true
+                    },
+
+                    "OUT_BOUNCE": {
+                      "type":"literal",
+                      "executable":true
+                    },
+
+                    "IN_BOUNCE": {
+                      "type":"literal",
+                      "executable":true
+                    },
+
+                    "IN_OUT_BOUNCE": {
+                      "type":"literal",
+                      "executable":true
+                    },
+
+                    "QUADRATIC": {
+                      "type":"literal",
+                      "executable":true
+                    }
+                  },
+                  "executable": true
+                },
+
+                "render_scale_interpoaltion_duration": {
+                  "type": "literal",
+                  "children": { 
+
+                    "value": {
+                      "type":"argument",
+                      "parser":"brigadier:integer",
+                      "properties": {
+                        "min":0
+                      },
+                      "executable": true
+                    }
+                  },
+                  "executable": true
                 }
               }
             }
