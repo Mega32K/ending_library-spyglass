@@ -6,6 +6,118 @@
       "type":"literal",
       "children": {
 
+        "abilities": {
+          "type": "literal",
+          "children": {
+
+            "player": {
+              "type": "argument",
+              "parser": "minecraft:entity",
+              "properties": {
+                "amount": "single",
+                "type":"player"
+              },
+              "children": {
+
+                "setGameModeAbilities" :{
+                  "type": "literal",
+                  "executable":true
+                },
+                
+                "invulnerable": {
+                  "type":"literal",
+                  "children": {
+
+                    "value" : {
+                      "type": "argument",
+                      "parser":"brigadier:bool",
+                      "executable":true
+                    },
+
+                    "default" : {
+                      "type": "literal", 
+                      "executable":true
+                    }
+                  },
+                  "executable":true
+                },
+                
+                "flying": {
+                  "type":"literal",
+                  "children": {
+
+                    "value" : {
+                      "type": "argument",
+                      "parser":"brigadier:bool",
+                      "executable":true
+                    },
+
+                    "default" : {
+                      "type": "literal", 
+                      "executable":true
+                    }
+                  },
+                  "executable":true
+                },
+                
+                "mayfly": {
+                  "type":"literal",
+                  "children": {
+
+                    "value" : {
+                      "type": "argument",
+                      "parser":"brigadier:bool",
+                      "executable":true
+                    },
+
+                    "default" : {
+                      "type": "literal", 
+                      "executable":true
+                    }
+                  },
+                  "executable":true
+                },
+                
+                "instabuild": {
+                  "type":"literal",
+                  "children": {
+
+                    "value" : {
+                      "type": "argument",
+                      "parser":"brigadier:bool",
+                      "executable":true
+                    },
+
+                    "default" : {
+                      "type": "literal", 
+                      "executable":true
+                    }
+                  },
+                  "executable":true
+                },
+                
+                "mayBuild": {
+                  "type":"literal",
+                  "children": {
+
+                    "value" : {
+                      "type": "argument",
+                      "parser":"brigadier:bool",
+                      "executable":true
+                    },
+
+                    "default" : {
+                      "type": "literal", 
+                      "executable":true
+                    }
+                  },
+                  "executable":true
+                }
+              }
+            }
+          }
+        },
+
         "display": {
           "type": "literal",
           "children": {
