@@ -6,6 +6,306 @@
       "type":"literal",
       "children": {
 
+        "overlay": {
+          "type": "literal",
+          "children": {
+
+            "player": {
+              "type": "argument",
+              "parser": "minecraft:entity",
+              "properties": {
+                "amount": "single",
+                "type":"player"
+              },
+              "children": {
+
+                "display" :{
+                  "type": "literal",
+                  "children": {
+
+                    "enable": {
+                      "type":"literal",
+                      "children": {
+
+                        "minecraft:vignette": {
+                          "type":"literal",
+                          "executable":true
+                        },
+
+                        "minecraft:spyglass": {
+                          "type":"literal",
+                          "executable":true
+                        },
+
+                        "minecraft:helmet": {
+                          "type":"literal",
+                          "executable":true
+                        },
+
+                        "minecraft:frostbite": {
+                          "type":"literal",
+                          "executable":true
+                        },
+
+                        "minecraft:portal": {
+                          "type":"literal",
+                          "executable":true
+                        },
+
+                        "minecraft:hotbar": {
+                          "type":"literal",
+                          "executable":true
+                        },
+
+                        "minecraft:crosshair": {
+                          "type":"literal",
+                          "executable":true
+                        },
+
+                        "minecraft:boss_event_progress": {
+                          "type":"literal",
+                          "executable":true
+                        },
+
+                        "minecraft:player_health": {
+                          "type":"literal",
+                          "executable":true
+                        },
+
+                        "minecraft:armor_level": {
+                          "type":"literal",
+                          "executable":true
+                        },
+
+                        "minecraft:food_level": {
+                          "type":"literal",
+                          "executable":true
+                        },
+
+                        "minecraft:air_level": {
+                          "type":"literal",
+                          "executable":true
+                        },
+
+                        "minecraft:mount_health": {
+                          "type":"literal",
+                          "executable":true
+                        },
+
+                        "minecraft:jump_bar": {
+                          "type":"literal",
+                          "executable":true
+                        },
+
+                        "minecraft:experience_bar": {
+                          "type":"literal",
+                          "executable":true
+                        },
+
+                        "minecraft:item_name": {
+                          "type":"literal",
+                          "executable":true
+                        },
+
+                        "minecraft:sleep_fade": {
+                          "type":"literal",
+                          "executable":true
+                        },
+
+                        "minecraft:potion_icons": {
+                          "type":"literal",
+                          "executable":true
+                        },
+
+                        "minecraft:debug_text": {
+                          "type":"literal",
+                          "executable":true
+                        },
+
+                        "minecraft:fps_graph": {
+                          "type":"literal",
+                          "executable":true
+                        },
+
+                        "minecraft:record_overlay": {
+                          "type":"literal",
+                          "executable":true
+                        },
+
+                        "minecraft:title_text": {
+                          "type":"literal",
+                          "executable":true
+                        },
+
+                        "minecraft:subtitles": {
+                          "type":"literal",
+                          "executable":true
+                        },
+
+                        "minecraft:scoreboard": {
+                          "type":"literal",
+                          "executable":true
+                        },
+
+                        "minecraft:chat_panel": {
+                          "type":"literal",
+                          "executable":true
+                        },
+
+                        "minecraft:player_list": {
+                          "type":"literal",
+                          "executable":true
+                        }
+                      }
+                    },
+
+                    "disable": {
+                      "type":"literal",
+                      "children": {
+
+                        "minecraft:vignette": {
+                          "type":"literal",
+                          "executable":true
+                        },
+
+                        "minecraft:spyglass": {
+                          "type":"literal",
+                          "executable":true
+                        },
+
+                        "minecraft:helmet": {
+                          "type":"literal",
+                          "executable":true
+                        },
+
+                        "minecraft:frostbite": {
+                          "type":"literal",
+                          "executable":true
+                        },
+
+                        "minecraft:portal": {
+                          "type":"literal",
+                          "executable":true
+                        },
+
+                        "minecraft:hotbar": {
+                          "type":"literal",
+                          "executable":true
+                        },
+
+                        "minecraft:crosshair": {
+                          "type":"literal",
+                          "executable":true
+                        },
+
+                        "minecraft:boss_event_progress": {
+                          "type":"literal",
+                          "executable":true
+                        },
+
+                        "minecraft:player_health": {
+                          "type":"literal",
+                          "executable":true
+                        },
+
+                        "minecraft:armor_level": {
+                          "type":"literal",
+                          "executable":true
+                        },
+
+                        "minecraft:food_level": {
+                          "type":"literal",
+                          "executable":true
+                        },
+
+                        "minecraft:air_level": {
+                          "type":"literal",
+                          "executable":true
+                        },
+
+                        "minecraft:mount_health": {
+                          "type":"literal",
+                          "executable":true
+                        },
+
+                        "minecraft:jump_bar": {
+                          "type":"literal",
+                          "executable":true
+                        },
+
+                        "minecraft:experience_bar": {
+                          "type":"literal",
+                          "executable":true
+                        },
+
+                        "minecraft:item_name": {
+                          "type":"literal",
+                          "executable":true
+                        },
+
+                        "minecraft:sleep_fade": {
+                          "type":"literal",
+                          "executable":true
+                        },
+
+                        "minecraft:potion_icons": {
+                          "type":"literal",
+                          "executable":true
+                        },
+
+                        "minecraft:debug_text": {
+                          "type":"literal",
+                          "executable":true
+                        },
+
+                        "minecraft:fps_graph": {
+                          "type":"literal",
+                          "executable":true
+                        },
+
+                        "minecraft:record_overlay": {
+                          "type":"literal",
+                          "executable":true
+                        },
+
+                        "minecraft:title_text": {
+                          "type":"literal",
+                          "executable":true
+                        },
+
+                        "minecraft:subtitles": {
+                          "type":"literal",
+                          "executable":true
+                        },
+
+                        "minecraft:scoreboard": {
+                          "type":"literal",
+                          "executable":true
+                        },
+
+                        "minecraft:chat_panel": {
+                          "type":"literal",
+                          "executable":true
+                        },
+
+                        "minecraft:player_list": {
+                          "type":"literal",
+                          "executable":true
+                        }
+                      }
+                    },
+
+                    "list": {
+                      "type":"literal",
+                      "executable":true
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+
         "abilities": {
           "type": "literal",
           "children": {
@@ -6162,6 +6462,24 @@
               "children": {
 
                 "can_be_collide_with": {
+                  "type": "literal",
+                  "children": {
+
+                    "default": {
+                      "type": "literal",
+                      "executable":true
+                    },
+
+                    "value": {
+                      "type":"argument",
+                      "parser":"brigadier:bool",
+                      "executable": true
+                    }
+                  },
+                  "executable": true
+                },
+
+                "pickable": {
                   "type": "literal",
                   "children": {
 
