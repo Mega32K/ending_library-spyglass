@@ -82122,19 +82122,16 @@
                     "lockedCameraPerson": {
                       "type": "literal",
                       "children": {
-                        "type": "literal",
-                        "children": {
 
-                          "value": {
-                            "type":"argument",
-                            "parser":"brigadier:bool",
-                            "executable": true
-                          },
+                        "value": {
+                          "type":"argument",
+                          "parser":"brigadier:bool",
+                          "executable": true
+                        },
 
-                          "default": {
-                            "type": "literal",
-                            "executable": true
-                          }
+                        "default": {
+                          "type": "literal",
+                          "executable": true
                         }
                       },
                       "executable":true
@@ -82143,10 +82140,7 @@
                     "lockedFov": {
                       "type": "literal",
                       "children": {
-                        "type": "literal",
-                        "children": {
-
-                          "value": {
+                        "value": {
                             "type":"argument",
                             "parser":"brigadier:bool",
                             "executable": true
@@ -82156,7 +82150,6 @@
                             "type": "literal",
                             "executable": true
                           }
-                        }
                       },
                       "executable":true
                     },
