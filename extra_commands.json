@@ -608,38 +608,44 @@
                   "executable": true
                 },
 
-                "display": {
+                "dispatch": {
                   "type":"literal",
                   "children": {
- 
-                    "text": {
+
+                    "display": {
                       "type":"literal",
                       "children": {
     
-                        "colorAnim": {
+                        "text": {
                           "type":"literal",
                           "children": {
         
-                            "newColor": {
-                              "type":"argument",
-                              "parser":"brigadier:string",
-                              "properties": {
-                                "type":"phrase"
-                              },
-                              "children":{
-
-                                "duration": {
+                            "colorAnim": {
+                              "type":"literal",
+                              "children": {
+            
+                                "newColor": {
                                   "type":"argument",
-                                  "parser":"brigadier:integer",
-                                  "properties":{
-                                    "min":0
+                                  "parser":"brigadier:string",
+                                  "properties": {
+                                    "type":"phrase"
                                   },
-                                  "executable":true
+                                  "children":{
+
+                                    "duration": {
+                                      "type":"argument",
+                                      "parser":"brigadier:integer",
+                                      "properties":{
+                                        "min":0
+                                      },
+                                      "executable":true
+                                    }
+                                  }
                                 }
-                              }
+                              },
+                              "executable":true
                             }
-                          },
-                          "executable":true
+                          }
                         }
                       }
                     }
