@@ -611,46 +611,40 @@
                 "dispatch": {
                   "type":"literal",
                   "children": {
-
-                    "display": {
+    
+                    "text": {
                       "type":"literal",
                       "children": {
-    
-                        "text": {
+        
+                        "colorAnim": {
                           "type":"literal",
                           "children": {
-        
-                            "colorAnim": {
-                              "type":"literal",
-                              "children": {
             
-                                "newColor": {
-                                  "type":"argument",
-                                  "parser":"brigadier:string",
-                                  "properties": {
-                                    "type":"phrase"
-                                  },
-                                  "children":{
-
-                                    "duration": {
-                                      "type":"argument",
-                                      "parser":"brigadier:integer",
-                                      "properties":{
-                                        "min":0
-                                      },
-                                      "executable":true
-                                    }
-                                  }
-                                }
+                            "newColor": {
+                              "type":"argument",
+                              "parser":"brigadier:string",
+                              "properties": {
+                                "type":"phrase"
                               },
-                              "executable":true
+                              "children":{
+
+                                "duration": {
+                                  "type":"argument",
+                                  "parser":"brigadier:integer",
+                                  "properties":{
+                                    "min":0
+                                  },
+                                  "executable":true
+                                }
+                              }
                             }
-                          }
-                        }
+                           },
+                          "executable":true
+                         }
                       }
                     }
-                  }
-                }
+                   }
+                 }
               }
             }
           }
