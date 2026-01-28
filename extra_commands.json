@@ -606,6 +606,44 @@
                     }
                   },
                   "executable": true
+                },
+
+                "display": {
+                  "type":"literal",
+                  "children": {
+ 
+                    "text": {
+                      "type":"literal",
+                      "children": {
+    
+                        "colorAnim": {
+                          "type":"literal",
+                          "children": {
+        
+                            "newColor": {
+                              "type":"argument",
+                              "parser":"brigadier:string",
+                              "properties": {
+                                "type":"phrase"
+                              },
+                              "children":{
+
+                                "duration": {
+                                  "type":"argument",
+                                  "parser":"brigadier:integer",
+                                  "properties":{
+                                    "min":0
+                                  },
+                                  "executable":true
+                                }
+                              }
+                            }
+                          },
+                          "executable":true
+                        }
+                      }
+                    }
+                  }
                 }
               }
             }
