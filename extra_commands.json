@@ -5602,7 +5602,7 @@
               "type": "argument",
               "parser": "minecraft:entity",
               "properties": {
-                "type": "players",
+                "type": "entities",
                 "amount": "multiple"
               },
               "children": {
