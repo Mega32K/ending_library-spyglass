@@ -22,8 +22,6 @@
                             "string": {
                               "type": "literal",
                               "children": {
-                                "type": "literal",
-                                "children": {
                                   "scale": {
                                     "type": "argument",
                                     "parser": "brigadier:double",
@@ -38,7 +36,6 @@
                                     }
                                   }
                                 }
-                              }
                             },
                             "byte": {
                               "type": "literal",
@@ -132,8 +129,6 @@
                             "string": {
                               "type": "literal",
                               "children": {
-                                "type": "literal",
-                                "children": {
                                   "scale": {
                                     "type": "argument",
                                     "parser": "brigadier:double",
@@ -148,79 +143,6 @@
                                     }
                                   }
                                 }
-                              }
-                            },
-                            "byte": {
-                              "type": "literal",
-                              "children": {
-                                "scale": {
-                                  "type": "argument",
-                                  "parser": "brigadier:double",
-                                  "redirect": [
-                                    "execute"
-                                  ]
-                                }
-                              }
-                            },
-                            "double": {
-                              "type": "literal",
-                              "children": {
-                                "scale": {
-                                  "type": "argument",
-                                  "parser": "brigadier:double",
-                                  "redirect": [
-                                    "execute"
-                                  ]
-                                }
-                              }
-                            },
-                            "float": {
-                              "type": "literal",
-                              "children": {
-                                "scale": {
-                                  "type": "argument",
-                                  "parser": "brigadier:double",
-                                  "redirect": [
-                                    "execute"
-                                  ]
-                                }
-                              }
-                            },
-                            "int": {
-                              "type": "literal",
-                              "children": {
-                                "scale": {
-                                  "type": "argument",
-                                  "parser": "brigadier:double",
-                                  "redirect": [
-                                    "execute"
-                                  ]
-                                }
-                              }
-                            },
-                            "long": {
-                              "type": "literal",
-                              "children": {
-                                "scale": {
-                                  "type": "argument",
-                                  "parser": "brigadier:double",
-                                  "redirect": [
-                                    "execute"
-                                  ]
-                                }
-                              }
-                            },
-                            "short": {
-                              "type": "literal",
-                              "children": {
-                                "scale": {
-                                  "type": "argument",
-                                  "parser": "brigadier:double",
-                                  "redirect": [
-                                    "execute"
-                                  ]
-                                }
-                              }
                             }
                           },
                           "parser": "minecraft:nbt_path"
@@ -246,8 +168,6 @@
                             "string": {
                               "type": "literal",
                               "children": {
-                                "type": "literal",
-                                "children": {
                                   "scale": {
                                     "type": "argument",
                                     "parser": "brigadier:double",
@@ -262,7 +182,6 @@
                                     }
                                   }
                                 }
-                              }
                             }
                           },
                           "parser": "minecraft:nbt_path"
